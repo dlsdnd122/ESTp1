@@ -160,7 +160,7 @@ body {
   z-index: 500;           /* 상단바보다 낮게 */
   width: 240px;
   height: calc(100vh - 56px);
-  background-color: #181818;
+  background-color: black;
   padding: 0px 10px;
 }
 .sidebar ul {
