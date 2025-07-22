@@ -1,4 +1,4 @@
-/* body 스타일 */
+/*---------- body 스타일 ----------*/
 body {
   margin: 0;
   display: flex;
@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 
-/*상단바*/
+/*----------상단바----------*/
 .topbar {
   position: fixed;
   top: 0;
@@ -154,7 +154,7 @@ body {
 
 
 
-/*사이드 바*/
+/*----------사이드 바----------*/
 .sidebar {
   position: fixed;
   top: 56px;              /* 상단바 높이만큼 내리기 */
@@ -203,7 +203,7 @@ body {
 }
 
 
-/*사이드바v2*/
+/*----------사이드바v2----------*/
 .sidebar2 {
   display: none;
   top: 56px;
@@ -254,4 +254,25 @@ body {
 .sidebar, .sidebar2{
   overflow-y: auto;
   background-color: black;
+}
+/* Webkit 기반 브라우저 (Chrome, Edge, Safari 등)용 스크롤바 스타일 */
+.sidebar::-webkit-scrollbar,
+.sidebar2::-webkit-scrollbar {
+  width: 4px; /* 스크롤바 굵기 */
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.sidebar2::-webkit-scrollbar-thumb {
+  background-color: #666; /* 손잡이 색상 */
+  border-radius: 4px;      /* 둥근 모서리 */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover,
+.sidebar2::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* 호버 시 색상 */
+}
+
+.sidebar::-webkit-scrollbar-track,
+.sidebar2::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* 배경 트랙 색상 */
 }
