@@ -164,6 +164,7 @@ body {
   height: 100vh;
   background-color: black;
   padding: 0px 10px;
+  overflow-y: auto;        /* 스크롤 */
 }
 .sidebar ul {
   list-style: none;
@@ -216,6 +217,7 @@ body {
   padding-top: 10px;
   gap: 8px;
   border-right: 1px solid #222;
+  /*overflow-y: auto;  아이콘 추가시 활성화 */
 }
 
 .sidebar2-btn {
@@ -249,6 +251,7 @@ body {
 }
 
 /* 사이드바 스크롤 */
-.sidebar, .sidebar2 {
-
+.sidebar, .sidebar2{
+  overflow-y: auto;
+  background-color: black;
 }
