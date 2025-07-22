@@ -40,6 +40,8 @@ body {
   gap: 16px;
 }
 
+
+
 /*상단바(left) 스타일*/
 /*햄버거바*/
 .menu-btn {
@@ -66,7 +68,6 @@ body {
   height: auto;
   cursor: pointer;
 }
-
 
 /*상단바(center) 스타일*/
 .center {
@@ -144,13 +145,14 @@ body {
   background-color: #222;
   border-color: #555;
 }
-
 /*프로필 이미지*/
 #profileimg {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
+
+
 
 /*사이드 바*/
 .sidebar {
@@ -159,7 +161,7 @@ body {
   left: 0;
   z-index: 500;           /* 상단바보다 낮게 */
   width: 240px;
-  height: calc(100vh - 56px);
+  height: 100vh;
   background-color: black;
   padding: 0px 10px;
 }
@@ -190,8 +192,63 @@ body {
   align-items: center;
   gap: 8px;
 }
-
 .sidebar button:hover {
   background-color: #333;
   border-radius: 8px;
+}
+.stream {
+  width: 30px;
+  height: auto;
+}
+
+
+/*사이드바v2*/
+.sidebar2 {
+  display: none;
+  top: 56px;
+  left: 0;
+  position: fixed;
+  width: 80px;
+  height: 100vh;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 8px;
+  border-right: 1px solid #222;
+}
+
+.sidebar2-btn {
+  background: none;
+  border: none;
+  color: white;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.sidebar2-btn i {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.sidebar2-btn:hover {
+  background-color: #272727;
+}
+
+/* 사이드바 전환 */
+.sidebar, .sidebar2 {
+  transition: all 0.2s ease;
+}
+
+/* 사이드바 스크롤 */
+.sidebar, .sidebar2 {
+
 }
