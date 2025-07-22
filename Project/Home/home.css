@@ -1,6 +1,99 @@
-body {
-  /*background-color: black;*/
-}
-.navbar {
+/*상단바*/
+.topbar {
+  display: flex;                       /*가로 정렬*/
+  justify-content: space-between;      /* 좌/우 정렬 */
+  align-items: center;                 /* 세로 중앙 정렬 */
+  padding: 8px 16px;
+  height: 56px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
   background-color: black;
+}
+
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  flex: 1;
+  justify-content: center;
+  gap: 8px;
+}
+
+.right {
+  gap: 16px;
+}
+
+/*상단바(left) 스타일*/
+/*햄버거바*/
+.fa-bars {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid #383838;
+}
+/*로고 이미지*/
+.logo-img {
+  width: 140px;
+  height: auto;
+}
+
+
+/*상단바(center) 스타일*/
+.center {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  width: 500px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #383838;
+  border-right: none;               /*버튼과 겹치는 부분 제거*/
+  border-radius: 20px 0 0 20px;     /*왼쪽만 둥글게*/
+  background-color: black;
+  outline: none;
+  font-size: 14px;
+  color: white;
+}
+.search-btn {
+  margin-left: -10px;
+  color: white;
+  height: 36px;
+  width: 60px;
+  border: 1px solid #383838;
+  border-left: none;                /*입력창과 겹치는 부분 제거*/
+  border-radius: 0 20px 20px 0;     /*오른쪽만 둥글게*/
+  background-color: #383838;
+  cursor: pointer;
+
+}
+.voice-btn {
+  margin-left: 5px;
+  color: white;
+  background-color: #383838;
+  border: 1px solid #383838;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+
+}
+
+
+
+
+
+
+
+
+/*상단바(right) 스타일*/
+/*프로필 이미지*/
+#profileimg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
