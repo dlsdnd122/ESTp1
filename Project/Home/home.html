@@ -39,7 +39,37 @@
     <button class="bell-btn" title="알림">
       <i class="far fa-bell"></i>
     </button>
-    <img src="/profile.png" alt="Profile" id="profileimg">
+
+    <div class="profile-wrapper">
+      <img src="home_img/profile.png" alt="Profile" class="profileimg" id="profile-img">
+      <!--    프로필 드롭다운 메뉴-->
+     <div class="dropdown" id="dropdownMenu">
+       <ul>
+         <li style="display: flex"><img src="home_img/profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
+         <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+         <li><a href="#"><i class="fab fa-google"></i>Google 계정</a></li>
+         <li><a href="#"><i class="fas fa-user-circle"></i>계정 전환&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+         <li><a href="#"><i class="fas fa-sign-out-alt"></i>로그아웃</a></li>
+         <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+         <li><a href="#"><i class="fas fa-video"></i>YouTube 스튜디오</a></li>
+         <li><a href="#"><i class="fas fa-gem"></i>내 Premium 혜택</a></li>
+         <li><a href="#"><i class="fas fa-shopping-bag"></i>구매 항목 및 맴버십</a></li>
+         <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+         <li><a href="#"><i class="fas fa-database"></i>Youtube의 내 데이터</a></li>
+         <li><a href="#"><i class="fas fa-palette"></i>디자인: 기기 테마&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+         <li><a href="#"><i class="fas fa-language"></i>언어: 한국어&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+         <li><a href="#"><i class="fas fa-eye-slash"></i>제한 모드: 사용 안함&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+         <li><a href="#"><i class="fas fa-map-marker-alt"></i>위치: 한국</a></li>
+         <li><a href="#"><i class="fas fa-keyboard"></i>단축키</a></li>
+         <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+         <li><a href="#"><i class="fas fa-cog"></i>설정</a></li>
+         <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+         <li><a href="#"><i class="fas fa-question-circle"></i>고객센터</a></li>
+         <li><a href="#"><i class="fas fa-comment-dots"></i>의견 보내기</a></li>
+       </ul>
+     </div>
+    </div>
+
   </div>
 </header>
 
@@ -93,9 +123,108 @@
   </div>
 </nav>
 
-<!--메인 콘텐츠-->
+<!--메인 콘텐츠(리스트 페이지)-->
 <main>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y90uO6SG5WE?si=4Tbap0euYwP2hO4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--  썸네일 리스트1-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/1.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/1-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">배말랭 옥천 집에 흑염소 풀기ㅋㅋㅋ</p>
+        <p class="video-producer">핫소스</p>
+        <p class="video-update">조회수 61만회 · 9일전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트2-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/2.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/2-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">휴가 복귀 3시간 전</p>
+        <p class="video-producer">숏박스</p>
+        <p class="video-update">조회수 774만회 · 7개월 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트3-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/3.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/3-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">(실제 거장이 만든) 예술적인 방탈출 게임</p>
+        <p class="video-producer">우주하마</p>
+        <p class="video-update">조회수 8.8만회 · 1일 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트4-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/4.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/4-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">나처럼 생긴 사람이 많은 나라 여행기 [뉴욕1]</p>
+        <p class="video-producer">레오티비 LEOTV</p>
+        <p class="video-update">조회수 18만회 · 1일 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트5-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/5.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/5-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">진실을 파헤치겠습니다</p>
+        <p class="video-producer">랄로</p>
+        <p class="video-update">조회수 95만회 · 4일 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트6-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/6.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/6-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">디저트 1타강사 아조씨의 최애 맛집 (ft.아저씨 시사 교양)</p>
+        <p class="video-producer">추성훈 ChooSungHoon</p>
+        <p class="video-update">조회수 73만회 · 5일 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트7-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/7.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/7-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">이제 대세는 CLaude Code!? 찐 꿀팁 대방출🔥</p>
+        <p class="video-producer">노마드 코더 Nomad Coders</p>
+        <p class="video-update">조회수 3.5만회 · 2일 전</p>
+      </div>
+    </div>
+  </div>
+  <!--  썸네일 리스트8-->
+  <div class="content">
+    <img class="thumbnail" src="home_img/thumbnail_img/8.png" alt="썸네일 사진">
+    <div class="video-meta">
+      <img class="producer-img" src="home_img/channel_img/8-c.jpg" alt="작성자">
+      <div class="video-info">
+        <p class="video-title">wait...you like lofi hip-hop?</p>
+        <p class="video-producer">the bootleg boy</p>
+        <p class="video-update">조회수 1만회 · 7일 전</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </main>
 
 

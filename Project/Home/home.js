@@ -14,11 +14,25 @@
   sidebar.style.display = 'none';
   sidebar2.style.display = 'flex'; // flex로 설정해야 내부 버튼들이 세로로 정렬됨
     main.style.marginLeft = '80px';
+    main.style.width = 'calc(100% - 80px)';
 } else {
   sidebar.style.display = 'block';
   sidebar2.style.display = 'none';
-  main.style.marginLeft = '240px'
+  main.style.marginLeft = '240px';
 }
 });
 });
 
+
+// 프로필 드롭다운 이벤트
+const profileImg = document.getElementById('profile-img');
+const dropdown = document.getElementById('dropdownMenu');
+profileImg.addEventListener("click", () => {
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+});
+// 바깥 클릭 시 드롭다운 닫기
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".profile-wrapper")) {
+    dropdown.style.display = "none";
+  }
+});
