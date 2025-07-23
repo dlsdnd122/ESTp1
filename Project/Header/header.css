@@ -1,0 +1,347 @@
+/*!*---------- body 스타일 ----------*!*/
+/*body {*/
+/*  margin: 0;*/
+/*  display: flex;*/
+/*  background-color: #121212;*/
+/*  color: white;*/
+/*  font-family: sans-serif;*/
+/*}*/
+
+/*!*----------상단바----------*!*/
+/*.topbar {*/
+/*  position: fixed;                    !* 상단바 고정 *!*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  z-index: 1000;                       !* 사이드바 보다 높게 *!*/
+/*  display: flex;                       !* 가로 정렬 *!*/
+/*  justify-content: space-between;      !* 좌/우 정렬 *!*/
+/*  align-items: center;                 !* 세로 중앙 정렬 *!*/
+/*  padding: 8px 16px;*/
+/*  height: 56px;*/
+/*  background-color: white;*/
+/*  border-bottom: 1px solid #ddd;*/
+/*  background-color: black;*/
+/*  border-bottom: none;*/
+/*}*/
+
+/*.left, .center, .right {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.center {*/
+/*  flex: 1;*/
+/*  justify-content: center;*/
+/*  gap: 8px;*/
+/*}*/
+
+/*.right {*/
+/*  gap: 16px;*/
+/*}*/
+
+
+
+/*!*상단바(left) 스타일*!*/
+/*!*햄버거바*!*/
+/*.menu-btn {*/
+/*  width: 36px;*/
+/*  height: 36px;*/
+/*  color: white;*/
+/*  background-color: black;*/
+/*  border: none;*/
+/*  border-radius: 50%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  cursor: pointer;*/
+/*  padding: 0;*/
+/*}*/
+/*.menu-btn:hover {*/
+/*  background-color: #333;*/
+/*}*/
+
+/*!*로고 이미지*!*/
+/*.logo-img {*/
+/*  width: 140px;*/
+/*  height: auto;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*!*상단바(center) 스타일*!*/
+/*.center {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+/*.search-bar {*/
+/*  width: 500px;*/
+/*  height: 36px;*/
+/*  padding: 0 10px;*/
+/*  border: 1px solid #2f2f2f;*/
+/*  border-right: none;               !*버튼과 겹치는 부분 제거*!*/
+/*  border-radius: 20px 0 0 20px;     !*왼쪽만 둥글게*!*/
+/*  background-color: black;*/
+/*  outline: none;*/
+/*  font-size: 14px;*/
+/*  color: white;*/
+/*}*/
+/*.search-btn {*/
+/*  margin-left: -10px;*/
+/*  color: white;*/
+/*  height: 36px;*/
+/*  width: 60px;*/
+/*  border: 1px solid #2f2f2f;*/
+/*  border-left: none;                !*입력창과 겹치는 부분 제거*!*/
+/*  border-radius: 0 20px 20px 0;     !*오른쪽만 둥글게*!*/
+/*  background-color: #2f2f2f;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.voice-btn {*/
+/*  margin-left: 5px;*/
+/*  color: white;*/
+/*  background-color: #2f2f2f;*/
+/*  border: none;*/
+/*  border-radius: 50%;*/
+/*  width: 36px;*/
+/*  height: 36px;*/
+/*}*/
+/*.voice-btn:hover {*/
+/*  background-color: #555;*/
+/*}*/
+
+/*!*상단바(right) 스타일*!*/
+/*.right {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+/*.make-btn {*/
+/*  color: white;*/
+/*  background-color: #2f2f2f;*/
+/*  border: none;*/
+/*  border-radius: 20px 20px 20px 20px;*/
+/*  width: 90px;*/
+/*  height: 36px;*/
+/*}*/
+/*.make-btn:hover {*/
+/*  background-color: #555;*/
+/*}*/
+/*.bell-btn  {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  color: white;*/
+/*  background-color: black;*/
+/*  font-size: 24px;*/
+/*  border: none;*/
+/*  border-radius: 50%;*/
+/*  height:36px;*/
+/*  width: 36px;*/
+/*}*/
+/*.bell-btn:hover {*/
+/*  background-color: #222;*/
+/*}*/
+/*!*프로필 이미지*!*/
+/*.profileimg {*/
+/*  width: 32px;*/
+/*  height: 32px;*/
+/*  border-radius: 50%;*/
+/*  object-fit: cover;*/
+/*}*/
+/*!*-------------프로필 드롭바-------------*!*/
+/*.profile-wrapper {*/
+/*  position: relative;*/
+/*  display: inline-block;*/
+/*}*/
+/*.dropdown {*/
+/*  position: absolute;*/
+/*  top: 100%;  !* 프로필 이미지 아래로*!*/
+/*  right: 0;*/
+/*  background-color: #2f2f2f;*/
+/*  border: 1px #ccc;*/
+/*  border-radius: 20px;*/
+/*  width: 300px;*/
+/*  display: none;*/
+/*  box-shadow: 0 2px 5px rgba(0,0,0,0.15);*/
+/*  z-index: 999;*/
+/*  max-height: 700px;*/
+/*  overflow-y: auto;*/
+/*}*/
+/*.dropdownProfile {*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  border-radius: 50%;*/
+/*  margin-top: 15px;*/
+/*  margin-left: 10px;*/
+/*}*/
+/*.dropdown ul {*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*}*/
+/*.dropdown ul li a {*/
+/*  display: block;*/
+/*  padding: 10px;*/
+/*  color: white;*/
+/*  text-decoration: none;*/
+/*}*/
+/*.dropdown a {*/
+/*  margin-left: 5px;*/
+/*}*/
+/*.dropdown i {*/
+/*  margin-right: 20px;*/
+/*}*/
+/*.dropdown ul li a:hover {*/
+/*  background-color: #555;*/
+/*  border-radius: 8px;*/
+/*}*/
+/*!*드롭박스 스크롤*!*/
+/*.dropdown{*/
+/*  overflow-y: auto;*/
+/*}*/
+/*!* Webkit 기반 브라우저 (Chrome, Edge, Safari 등)용 스크롤바 스타일 *!*/
+/*.dropdown::-webkit-scrollbar {*/
+/*  width: 4px; !* 스크롤바 굵기 *!*/
+/*}*/
+
+/*.dropdown::-webkit-scrollbar-thumb {*/
+/*  background-color: #666; !* 손잡이 색상 *!*/
+/*  border-radius: 4px;      !* 둥근 모서리 *!*/
+/*}*/
+
+/*.dropdown::-webkit-scrollbar-thumb:hover {*/
+/*  background-color: #888; !* 호버 시 색상 *!*/
+/*}*/
+
+/*.dropdown::-webkit-scrollbar-track {*/
+/*  background-color: #1a1a1a; !* 배경 트랙 색상 *!*/
+/*}*/
+
+
+/*!*----------사이드 바----------*!*/
+/*.sidebar {*/
+/*  position: fixed;        !* 사이드바 고정 *!*/
+/*  top: 56px;              !* 상단바 높이만큼 내리기 *!*/
+/*  left: 0;*/
+/*  z-index: 500;           !* 상단바보다 낮게 *!*/
+/*  width: 240px;*/
+/*  height: 100vh;*/
+/*  background-color: black;*/
+/*  padding: 0 10px;*/
+/*  overflow-y: auto;        !* 스크롤 *!*/
+/*}*/
+/*.sidebar ul {*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*  margin-top: 5px;*/
+/*}*/
+/*.sidebar li {*/
+/*  margin:  0;*/
+/*}*/
+/*.sidebar a {*/
+/*  text-decoration: none;*/
+/*  color: white;*/
+/*  font-size: 16px;*/
+/*}*/
+/*!*사이드바 버튼*!*/
+/*.sidebar button {*/
+/*  width: 100%;*/
+/*  background: none;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  font-size: 16px;*/
+/*  text-align: left;*/
+/*  padding: 10px;*/
+/*  cursor: pointer;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  gap: 8px;*/
+/*}*/
+/*.sidebar button:hover {*/
+/*  background-color: #333;*/
+/*  border-radius: 8px;*/
+/*}*/
+/*.sidebar img {*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  border-radius: 50%;*/
+/*}*/
+/*.stream {*/
+/*  width: 30px;*/
+/*  height: auto;*/
+/*}*/
+
+
+/*!*----------사이드바v2----------*!*/
+/*.sidebar2 {*/
+/*  display: none;                !* 첫 로딩화면에서 안보이게 *!*/
+/*  top: 56px;*/
+/*  left: 0;*/
+/*  position: fixed;              !* 사이드바v2 고정 *!*/
+/*  width: 80px;*/
+/*  height: 100vh;*/
+/*  background-color: black;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  padding-top: 10px;*/
+/*  gap: 8px;*/
+/*  border-right: 1px solid #222;*/
+/*  !*overflow-y: auto;  아이콘 추가시 활성화 *!*/
+/*}*/
+
+/*.sidebar2-btn {*/
+/*  background: none;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  width: 64px;*/
+/*  height: 64px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: 12px;*/
+/*  cursor: pointer;*/
+/*  border-radius: 10px;*/
+/*  transition: background-color 0.2s;*/
+/*}*/
+
+/*.sidebar2-btn i {*/
+/*  font-size: 20px;*/
+/*  margin-bottom: 4px;*/
+/*}*/
+
+/*.sidebar2-btn:hover {*/
+/*  background-color: #272727;*/
+/*}*/
+
+/*!* 사이드바 전환 *!*/
+/*.sidebar, .sidebar2 {*/
+/*  transition: all 0.2s ease;*/
+/*}*/
+
+/*!* 사이드바 스크롤 *!*/
+/*.sidebar, .sidebar2{*/
+/*  overflow-y: auto;*/
+/*  background-color: black;*/
+/*}*/
+/*!* Webkit 기반 브라우저 (Chrome, Edge, Safari 등)용 스크롤바 스타일 *!*/
+/*.sidebar::-webkit-scrollbar,*/
+/*.sidebar2::-webkit-scrollbar {*/
+/*  width: 4px; !* 스크롤바 굵기 *!*/
+/*}*/
+
+/*.sidebar::-webkit-scrollbar-thumb,*/
+/*.sidebar2::-webkit-scrollbar-thumb {*/
+/*  background-color: #666; !* 손잡이 색상 *!*/
+/*  border-radius: 4px;      !* 둥근 모서리 *!*/
+/*}*/
+
+/*.sidebar::-webkit-scrollbar-thumb:hover,*/
+/*.sidebar2::-webkit-scrollbar-thumb:hover {*/
+/*  background-color: #888; !* 호버 시 색상 *!*/
+/*}*/
+
+/*.sidebar::-webkit-scrollbar-track,*/
+/*.sidebar2::-webkit-scrollbar-track {*/
+/*  background-color: #1a1a1a; !* 배경 트랙 색상 *!*/
+/*}*/

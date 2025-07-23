@@ -1,0 +1,131 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  <title>Youtube</title>-->
+<!--  <link-->
+<!--    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<!--  <link rel="stylesheet" href="../Header/header.css">-->
+<!--  &lt;!&ndash;  유튜브 아이콘&ndash;&gt;-->
+<!--  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'><path d='M27.4433 3.12038C27.129 1.89551 26.1331 0.90449 24.902 0.590184C22.716 0 14 0 14 0C14 0 5.284 0 3.09801 0.590184C1.86687 0.90449 0.871033 1.89551 0.556684 3.12038C0 5.3402 0 10 0 10C0 10 0 14.6598 0.556684 16.8796C0.871033 18.1045 1.86687 19.0955 3.09801 19.4098C5.284 20 14 20 14 20C14 20 22.716 20 24.902 19.4098C26.1331 19.0955 27.129 18.1045 27.4433 16.8796C28 14.6598 28 10 28 10C28 10 28 5.3402 27.4433 3.12038Z' fill='%23FF0000'/><path d='M11.1999 14.2857L18.3999 10L11.1999 5.71429V14.2857Z' fill='white'/></svg>">-->
+<!--  &lt;!&ndash;  Font Awesome&ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
+<!--  &lt;!&ndash;  Material Icons&ndash;&gt;-->
+<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--&lt;!&ndash; (공통)상단바 &ndash;&gt;-->
+<!--&lt;!&ndash;left&ndash;&gt;-->
+<!--<header class="topbar">-->
+<!--  <div class="left">-->
+<!--    <button class="menu-btn">-->
+<!--      <i class="fas fa-bars"></i>-->
+<!--    </button>-->
+<!--    <img src="/youtube_logo.png" alt="YouTube Logo" class="logo-img" id="logo-img">-->
+<!--  </div>-->
+<!--  &lt;!&ndash;center&ndash;&gt;-->
+<!--  <div class="center">-->
+<!--    <input class="search-bar" id="search-bar" type="text" placeholder="검색">-->
+<!--    <button class="search-btn"><i class="fas fa-search"></i></button>-->
+<!--    <button class="voice-btn" title="음성으로 검색">-->
+<!--      <i class="fas fa-microphone"></i>-->
+<!--    </button>-->
+<!--  </div>-->
+<!--  &lt;!&ndash;right&ndash;&gt;-->
+<!--  <div class="right">-->
+<!--    <button class="make-btn">+&nbsp;&nbsp;만들기</button>-->
+<!--    <button class="bell-btn" title="알림">-->
+<!--      <i class="far fa-bell"></i>-->
+<!--    </button>-->
+
+<!--    <div class="profile-wrapper">-->
+<!--      <img src="../Header/profile.png" alt="Profile" class="profileimg" id="profile-img">-->
+<!--      &lt;!&ndash;    프로필 드롭다운 메뉴&ndash;&gt;-->
+<!--      <div class="dropdown" id="dropdownMenu">-->
+<!--        <ul>-->
+<!--          <li style="display: flex"><img src="profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>-->
+<!--          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--          <li><a href="#"><i class="fab fa-google"></i>Google 계정</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-user-circle"></i>계정 전환</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-sign-out-alt"></i>로그아웃</a></li>-->
+<!--          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--          <li><a href="#"><i class="fas fa-video"></i>YouTube 스튜디오</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-gem"></i>내 Premium 혜택</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-shopping-bag"></i>구매 항목 및 맴버십</a></li>-->
+<!--          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--          <li><a href="#"><i class="fas fa-database"></i>Youtube의 내 데이터</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-palette"></i>디자인: 기기 테마</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-language"></i>언어: 한국어</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-eye-slash"></i>제한 모드: 사용 안함</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-map-marker-alt"></i>위치: 한국</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-keyboard"></i>단축키</a></li>-->
+<!--          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--          <li><a href="#"><i class="fas fa-cog"></i>설정</a></li>-->
+<!--          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--          <li><a href="#"><i class="fas fa-question-circle"></i>고객센터</a></li>-->
+<!--          <li><a href="#"><i class="fas fa-comment-dots"></i>의견 보내기</a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--</header>-->
+
+<!--&lt;!&ndash;사이드바v1&ndash;&gt;-->
+<!--<nav class="sidebar" id="sidebar">-->
+<!--  &lt;!&ndash;사이드바1&ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li><button><i class="fas fa-home"></i>홈</button></li>-->
+<!--    <li><button><i class="fas fa-bolt"></i> Shorts</button></li>-->
+<!--    <li><button><i class="fas fa-folder-open"></i> 구독</button></li>-->
+<!--    <li><button><i class="fas fa-music"></i> Youtube Music</button></li>-->
+<!--  </ul>-->
+<!--  <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--  &lt;!&ndash;사이드바2&ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li><button> 내 페이지&nbsp;&nbsp;&nbsp;&nbsp;></button></li>-->
+<!--    <li><button><i class="fas fa-clock"></i> 시청기록</button></li>-->
+<!--    <li><button><i class="fas fa-list"></i>재생목록</button></li>-->
+<!--    <li><button><i class="fas fa-video"></i> 내 동영상</button></li>-->
+<!--    <li><button><i class="fas fa-film"></i> 내 영화</button></li>-->
+<!--    <li><button><i class="fas fa-clock"></i> 나중에 볼 동영상</button></li>-->
+<!--    <li><button><i class="fas fa-thumbs-up"></i> 좋아요 표시한 동영상</button></li>-->
+<!--    <li><button><i class="fas fa-download"></i> 오프라인 저장 동영상</button></li>-->
+<!--  </ul>-->
+<!--  <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />-->
+<!--  &lt;!&ndash;사이드바3&ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li style="margin-bottom: 5px">&nbsp;&nbsp;구독</li>-->
+<!--    <li><button><img src="home_img/channel_img/5-c.jpg" alt=""> 랄로1<img class="stream" src="/stream.png"></button></li>-->
+<!--    <li><button><img src="home_img/channel_img/5-c.jpg" alt=""> 랄로2&lt;!&ndash;<img class="stream" src="/stream.png">&ndash;&gt;</button></li>-->
+<!--    <li><button><img src="home_img/channel_img/5-c.jpg" alt=""> 랄로3<img class="stream" src="/stream.png"></button></li>-->
+<!--    <li><button><img src="home_img/channel_img/5-c.jpg" alt="">랄로4&lt;!&ndash;<img class="stream" src="/stream.png">&ndash;&gt;</button></li>-->
+<!--    <li><button><img src="home_img/channel_img/5-c.jpg" alt=""> 랄로5<img class="stream" src="/stream.png"></button></li>-->
+<!--    <li><button><<img src="home_img/channel_img/5-c.jpg" alt=""> 랄로6&lt;!&ndash;<img class="stream" src="/stream.png">&ndash;&gt;</button></li>-->
+<!--  </ul>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash;사이드바v2&ndash;&gt;-->
+<!--<nav class="sidebar2">-->
+<!--  <div class="sidebar2-group">-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-home"></i><span>홈</span></button>-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-bolt"></i><span>Shorts</span></button>-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-folder-open"></i><span>구독</span></button>-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-music"></i><span>YouTube Music</span></button>-->
+<!--  </div>-->
+
+<!--  <div class="sidebar2-group">-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-user"></i><span>내 페이지</span></button>-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-clock"></i><span>시청 기록</span></button>-->
+<!--    <button class="sidebar2-btn"><i class="fas fa-download"></i><span>오프라인 저장</span></button>-->
+<!--  </div>-->
+<!--</nav>-->
+
+
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="../Header/header.js"></script>-->
+<!--</body>-->
+<!--</html>-->
