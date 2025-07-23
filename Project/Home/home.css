@@ -6,7 +6,6 @@ body {
   color: white;
   font-family: sans-serif;
 }
-
 /*----------상단바----------*/
 .topbar {
   position: fixed;                    /* 상단바 고정 */
@@ -216,6 +215,7 @@ body {
 .dropdown::-webkit-scrollbar-track {
   background-color: #1a1a1a; /* 배경 트랙 색상 */
 }
+
 
 /*----------사이드 바----------*/
 .sidebar {
