@@ -276,3 +276,13 @@ body {
 .sidebar2::-webkit-scrollbar-track {
   background-color: #1a1a1a; /* 배경 트랙 색상 */
 }
+
+/*메인 콘텐츠*/
+main {
+  margin-top: 56px;
+  margin-left: 240px;
+  padding: 16px;
+  color: white;
+  background-color: #121212;
+  min-height: calc(100vh - 56px);
+}
