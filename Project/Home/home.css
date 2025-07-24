@@ -303,10 +303,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 8px;
   font-size: 12px;
   cursor: pointer;
   border-radius: 10px;
-  transition: background-color 0.2s;
+  /*transition: background-color 0.2s;*/
 }
 
 .sidebar2-btn i {
@@ -359,6 +360,9 @@ main {
   background-color: black;
   min-height: calc(100vh - 56px);
   width: calc(100% - 240px);    /* main 크기 확장 */
+}
+main a{
+  text-decoration: none;
 }
 
 .content {
