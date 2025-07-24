@@ -218,6 +218,14 @@ body {
 
 
 /*----------사이드 바----------*/
+/*사이드바 버튼 클릭 시 호버 유지되게 만들었음*/
+.sidebar button:hover,
+.sidebar2-btn:hover,
+.sidebar button.active,
+.sidebar2-btn.active {
+  background-color: #333;
+  border-radius: 8px;
+}
 .sidebar {
   position: fixed;        /* 사이드바 고정 */
   top: 56px;              /* 상단바 높이만큼 내리기 */
@@ -256,10 +264,7 @@ body {
   align-items: center;
   gap: 8px;
 }
-.sidebar button:hover {
-  background-color: #333;
-  border-radius: 8px;
-}
+
 .sidebar img {
   width: 20px;
   height: 20px;
@@ -309,9 +314,6 @@ body {
   margin-bottom: 4px;
 }
 
-.sidebar2-btn:hover {
-  background-color: #272727;
-}
 
 /* 사이드바 전환 */
 .sidebar, .sidebar2 {

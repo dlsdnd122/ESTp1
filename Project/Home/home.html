@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!--  Material Icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="subscribe.css">
 </head>
 
 <body>
@@ -41,11 +42,11 @@
     </button>
 
     <div class="profile-wrapper">
-      <img src="profile.png" alt="Profile" class="profileimg" id="profile-img">
+      <img src="home_img/profile.png" alt="Profile" class="profileimg" id="profile-img">
       <!--    프로필 드롭다운 메뉴-->
       <div class="dropdown" id="dropdownMenu">
         <ul>
-          <li style="display: flex"><img src="profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
+          <li style="display: flex"><img src="home_img/profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
           <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
           <li><a href="#"><i class="fab fa-google"></i>Google 계정</a></li>
           <li><a href="#"><i class="fas fa-user-circle"></i>계정 전환</a></li>
@@ -74,25 +75,25 @@
 </header>
 
 <!--사이드바v1-->
-<nav class="sidebar" id="sidebar">
+<nav class="sidebar active" id="sidebar">
   <!--사이드바1-->
   <ul>
-    <li><button><i class="fas fa-home"></i>홈</button></li>
-    <li><button><i class="fas fa-bolt"></i> Shorts</button></li>
-    <li><button><i class="fas fa-folder-open"></i> 구독</button></li>
+    <li><button onclick="location.href='home.html'"><i class="fas fa-home"></i>홈</button></li>
+    <li><button id="shorts-btn1"><i class="fas fa-bolt"></i> Shorts</button></li>
+    <li><button id="subscribe-btn1"><i class="fas fa-folder-open"></i> 구독</button></li>
     <li><button><i class="fas fa-music"></i> Youtube Music</button></li>
   </ul>
   <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
   <!--사이드바2-->
   <ul>
-    <li><button> 내 페이지&nbsp;&nbsp;&nbsp;&nbsp;></button></li>
-    <li><button><i class="fas fa-clock"></i> 시청기록</button></li>
-    <li><button><i class="fas fa-list"></i>재생목록</button></li>
-    <li><button><i class="fas fa-video"></i> 내 동영상</button></li>
-    <li><button><i class="fas fa-film"></i> 내 영화</button></li>
-    <li><button><i class="fas fa-clock"></i> 나중에 볼 동영상</button></li>
-    <li><button><i class="fas fa-thumbs-up"></i> 좋아요 표시한 동영상</button></li>
-    <li><button><i class="fas fa-download"></i> 오프라인 저장 동영상</button></li>
+    <li><button > 내 페이지&nbsp;&nbsp;&nbsp;&nbsp;></button></li>
+    <li><button ><i class="fas fa-clock"></i> 시청기록</button></li>
+    <li><button ><i class="fas fa-list"></i>재생목록</button></li>
+    <li><button ><i class="fas fa-video"></i> 내 동영상</button></li>
+    <li><button ><i class="fas fa-film"></i> 내 영화</button></li>
+    <li><button ><i class="fas fa-clock"></i> 나중에 볼 동영상</button></li>
+    <li><button ><i class="fas fa-thumbs-up"></i> 좋아요 표시한 동영상</button></li>
+    <li><button ><i class="fas fa-download"></i> 오프라인 저장 동영상</button></li>
   </ul>
   <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
   <!--사이드바3-->
@@ -108,15 +109,15 @@
 </nav>
 
 <!--사이드바v2-->
-<nav class="sidebar2">
+<nav class="sidebar2 active">
   <div class="sidebar2-group">
-    <button class="sidebar2-btn"><i class="fas fa-home"></i><span>홈</span></button>
-    <button class="sidebar2-btn"><i class="fas fa-bolt"></i><span>Shorts</span></button>
-    <button class="sidebar2-btn"><i class="fas fa-folder-open"></i><span>구독</span></button>
+    <button class="sidebar2-btn" onclick="location.href='home.html'"><i class="fas fa-home"></i><span>홈</span></button>
+    <button class="sidebar2-btn" id="shorts-btn2"><i class="fas fa-bolt"></i><span>Shorts</span></button>
+    <button class="sidebar2-btn" id="subscribe-btn2"><i class="fas fa-folder-open"></i><span>구독</span></button>
     <button class="sidebar2-btn"><i class="fas fa-music"></i><span>YouTube Music</span></button>
   </div>
 
-  <div class="sidebar2-group">
+  <div class="sidebar2-group active">
     <button class="sidebar2-btn"><i class="fas fa-user"></i><span>내 페이지</span></button>
     <button class="sidebar2-btn"><i class="fas fa-clock"></i><span>시청 기록</span></button>
     <button class="sidebar2-btn"><i class="fas fa-download"></i><span>오프라인 저장</span></button>
@@ -124,7 +125,7 @@
 </nav>
 
 <!--메인 콘텐츠(리스트 페이지)-->
-<main>
+<main id="main-container">
 <!--  썸네일 리스트1-->
   <div class="content">
     <img class="thumbnail" src="home_img/thumbnail_img/1.png" alt="썸네일 사진">
@@ -222,11 +223,6 @@
     </div>
   </div>
 </main>
-
-
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
