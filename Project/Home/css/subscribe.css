@@ -42,7 +42,8 @@
   width: 36px;
 }
 .rm-btn:hover {
-  background-color: #87CEEB;
+  background-color: #152b44;
+  border: none;
 }
 
 .list-btn {
