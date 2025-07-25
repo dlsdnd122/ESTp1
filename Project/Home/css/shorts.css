@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
     border: 1px solid white;
     border-radius: 10px;
 }
