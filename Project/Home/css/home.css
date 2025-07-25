@@ -222,7 +222,7 @@ body {
 .sidebar button:hover,
 .sidebar2-btn:hover,
 .sidebar button.active,
-.sidebar2-btn.active {
+.sidebar2-btn.active{
   background-color: #333;
   border-radius: 8px;
 }
