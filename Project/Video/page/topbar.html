@@ -38,11 +38,11 @@
     </button>
 
     <div class="profile-wrapper">
-      <img src="../../profile.png" alt="Profile" class="profileimg" id="profile-img">
+      <img src="../video_img/profile.png" alt="Profile" class="profileimg" id="profile-img">
       <!--    프로필 드롭다운 메뉴-->
       <div class="dropdown" id="dropdownMenu">
         <ul>
-          <li style="display: flex"><img src="../../profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
+          <li style="display: flex"><img src="../video_img/profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
           <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
           <li><a href="#"><i class="fab fa-google"></i>Google 계정</a></li>
           <li><a href="#"><i class="fas fa-user-circle"></i>계정 전환</a></li>
@@ -96,18 +96,55 @@
     <!--사이드바3-->
     <ul>
       <li style="margin-bottom: 5px">&nbsp;&nbsp;구독</li>
-      <li><button><img src="../../ralro.jpg" alt=""> 랄로1<img class="stream" src="/stream.png"></button></li>
-      <li><button><img src="../../ralro.jpg" alt=""> 랄로2<!--<img class="stream" src="/stream.png">--></button></li>
-      <li><button><img src="../../ralro.jpg" alt=""> 랄로3<img class="stream" src="/stream.png"></button></li>
-      <li><button><img src="../../ralro.jpg" alt="">랄로4<!--<img class="stream" src="/stream.png">--></button></li>
-      <li><button><img src="../../ralro.jpg" alt=""> 랄로5<img class="stream" src="/stream.png"></button></li>
-      <li><button><img src="../../ralro.jpg" alt=""> 랄로6<!--<img class="stream" src="/stream.png">--></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt=""> 랄로1<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt=""> 랄로2<!--<img class="stream" src="/stream.png">--></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt=""> 랄로3<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt="">랄로4<!--<img class="stream" src="/stream.png">--></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt=""> 랄로5<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/ralro.jpg" alt=""> 랄로6<!--<img class="stream" src="/stream.png">--></button></li>
     </ul>
   </nav>
 </div>
 
+<main class="content">
+<!--  영상content-->
+  <div class="i-video" id="i-video">
+    <div>
+      <iframe width="800" height="550" src="https://www.youtube.com/embed/Nf5TvCCoUAs?si=7E0vVE-LnKlJrhmi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h5 style="margin-top: 10px">배말랭 옥천 집에 흑염소 풀기ㅋㅋㅋ </h5>
+<!--    유튜버 이름, 좋아요 등 버튼들-->
+    <div class="v-producer_content">
+      <img class="i-video_profile" src="../video_img/1-c.jpg" alt="프로필">
+      <div class="vp-left" style="display: block">
+        <p class="bi-letter">핫소스</p>
+        <p class="li-letter">구독자 98만명</p>
+      </div>
+        <button style="width: 55px">가입</button>
+        <button style="width: 55px">구독</button>
+      <div class="vp-right">
+        <div class="like-group">
+          <button id="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;2.5천</button>
+          <button id="unlike"><i class="fa-regular fa-thumbs-down"></i></button>
+        </div>
+        <button><i class="fa-solid fa-share"></i> 공유</button>
+        <button><i class="fa-solid fa-download"></i> 내려받기</button>
+        <button><i class="fa-solid fa-heart"></i> Thanks</button>
+      </div>
+    </div>
+<!--    영상 설명-->
+    <div class="content-exp">
+      조회수
+    </div>
+    <div>
+      댓글쓰 촉촉
+    </div>
+  </div>
 
-
+</main>
+<main class="playlist">
+  <div>영상 재생 목록</div>
+</main>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
