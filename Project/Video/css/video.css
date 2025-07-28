@@ -15,10 +15,11 @@ body {
   margin-top: 80px;
 }
 .content {
-  width: 70%;
+  width: 74%;
 }
 .playlist {
-  width: 30%;
+  width: 26%;
+  margin-left: 15px;
 }
 
 /*----------------------------------상단바----------------------------------*/
@@ -513,7 +514,7 @@ iframe {
 }
 
 #full-desc.collapsed {
-  max-height: 60px; /* 처음 보일 높이 조정 (3~4줄 보이게) */
+  max-height: 50px; /* 처음 보일 높이 조정 (3~4줄 보이게) */
 }
 
 #full-desc.expanded {
@@ -533,7 +534,7 @@ iframe {
 .comment-bottom {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .comment-text {
   margin-left: 10px;
@@ -563,4 +564,20 @@ iframe {
 .com-dropdown:hover {
   background-color: #777;
 }
+.comment-btn {
+  background-color: black;
+  color: white;
+  height: 30px;
+  border: none;
+}
+.comment-btn2 {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+}
+.comment-btn2:hover {
+  background-color: #555;
+}
+
 /*----------------------------------main-재생목록*----------------------------------- */
