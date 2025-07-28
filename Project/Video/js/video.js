@@ -54,4 +54,40 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// ==================================
+// 3. 더보기/간략히 로직
+// ==================================
+
+  const toggleBtn = document.getElementById("toggle-btn");
+  const fullDesc = document.getElementById("full-desc");
+
+  toggleBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  fullDesc.classList.toggle("expanded");
+  fullDesc.classList.toggle("collapsed");
+
+  toggleBtn.textContent = fullDesc.classList.contains("expanded") ? "간략히" : "더보기";
+});
+
+// ==================================
+// 4. 좋아요/싫어요 버튼 호버로직
+// ==================================
+const likeBtn = document.getElementById('like');
+const unlikeBtn = document.getElementById('unlike');
+
+likeBtn.addEventListener('click', () => {
+  likeBtn.classList.toggle('active');
+  if (likeBtn.classList.contains('active')) {
+    unlikeBtn.classList.remove('active');
+  }
+});
+
+unlikeBtn.addEventListener('click', () => {
+  unlikeBtn.classList.toggle('active');
+  if (unlikeBtn.classList.contains('active')) {
+    likeBtn.classList.remove('active');
+  }
+});
+
+
 
