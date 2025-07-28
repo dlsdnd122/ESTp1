@@ -122,8 +122,8 @@
           <p class="li-letter">구독자 98만명</p>
         </div>
         <button class="vpc-btn" style="width: 55px">가입</button>
-        <button class="vpc-btn" style="width: 55px">구독</button>
-        <button class="vpc-btn" style="width: 70px">구독 중</button>
+        <button class="vpc-btn" id="sub1" style="width: 55px">구독</button>
+        <button class="vpc-btn" id="sub2" style="width: 70px; display: none">구독 중</button>
         <div class="vp-right">
           <div class="like-group">
             <button class="like-btn" id="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;2.5천</button>
@@ -177,9 +177,19 @@
         </div>
       </div>
 
-      <div class="comment">
-        <h4>댓글 0개</h4>
-
+      <div class="comment-top">
+        <h5 style="margin-bottom: 0; font-weight: bold">댓글 0개</h5>
+        <div>
+          <button class="comment-array" id="comment-array"><i class="fa-solid fa-align-left"></i>&nbsp;&nbsp;정렬 기준</button>
+          <div id="comment-dropbar" class="comment-dropbar">
+            <button class="com-dropdown">인기 댓글순</button>
+            <button class="com-dropdown">최신순</button>
+          </div>
+        </div>
+      </div>
+      <div class="comment-bottom">
+        <img class="i-video_profile" src="../video_img/profile.png" alt="프로필">
+        <input class="comment-text" type="text" placeholder="댓글 추가...">
       </div>
     </div>
 

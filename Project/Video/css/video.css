@@ -495,7 +495,7 @@ iframe {
 .str-btn:hover {
   background-color: #555;
 }
-
+/*영상설명 더보기/간략히 구현*/
 .briefly {
   /*margin-top: 50px ;*/
   text-align: right;
@@ -520,9 +520,47 @@ iframe {
   max-height: 1000px; /* 충분히 크게 설정 */
 }
 
-
-/*----------------------------------main-재생목록*----------------------------------- */
-.playlist {
-
-
+.comment-top {
+  display: flex;
+  margin-top: 20px;
 }
+.comment-array {
+  margin-left: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.comment-bottom {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comment-text {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+.comment-dropbar {
+  display: none;
+  position: absolute;
+  background-color: #2f2f2f;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.com-dropdown {
+  color: white;
+  background-color: #2f2f2f;
+  padding: 7px 10px;
+  font-size: 14px;
+  display: block;
+  border: none;
+  width: 100px;
+  text-align: left;
+}
+.com-dropdown:hover {
+  background-color: #777;
+}
+/*----------------------------------main-재생목록*----------------------------------- */

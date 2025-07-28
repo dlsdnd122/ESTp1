@@ -90,4 +90,33 @@ unlikeBtn.addEventListener('click', () => {
 });
 
 
+// ==================================
+// 5. 구독/구독중 버튼 로직
+// ==================================
+const btn1 = document.getElementById('sub1');
+const btn2 = document.getElementById('sub2');
+
+btn1.addEventListener('click', () => {
+  btn1.style.display = 'none';
+  btn2.style.display = 'inline-block'; // 또는 'block' 도 가능
+  alert('구독 하였습니다.')
+});
+
+btn2.addEventListener('click', () => {
+  btn2.style.display = 'none';
+  btn1.style.display = 'inline-block';
+  alert('구독을 취소하였습니다.')
+});
+
+
+// ==================================
+// 6. 정렬 기준 드롭박스 로직
+// ==================================
+const dropdownBtn = document.getElementById('comment-array');
+const dropdownContent = document.getElementById('comment-dropbar');
+
+dropdownBtn.addEventListener('click', () => {
+  dropdownContent.style.display =
+    dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
 
