@@ -120,3 +120,58 @@ dropdownBtn.addEventListener('click', () => {
     dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
 
+// ==================================
+// 7. 특정 width이하일때 버튼 안보이게하기
+// ==================================
+function toggleButtonsByWindowWidth() {
+  const windowWidth = window.innerWidth;
+
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById(`none-icon${i}`);
+    if (el) {
+      if (windowWidth < 960) {
+        el.style.display = "none";
+      } else {
+        el.style.display = "block"; // 다시 보이게
+      }
+    }
+  }
+}
+// 처음 로딩 시 체크
+toggleButtonsByWindowWidth();
+// 창 크기 변경 시 체크
+window.addEventListener("resize", toggleButtonsByWindowWidth);
+
+// ==================================
+// 8. playlist 반응형 구현
+// ==================================
+const playlist = document.querySelector('.playlist');
+const mainContainer = document.querySelector('.main-container');
+const content = document.querySelector('.content');
+const commentTop = document.querySelector('.comment-top'); // 댓글 위쪽 요소
+const commentBottom = document.querySelector('.comment-bottom'); // 댓글 입력창
+
+function rearrangeLayout() {
+  if (window.innerWidth <= 960) {
+    // 960 이하: playlist를 댓글 위로 이동
+    if (playlist && commentTop && playlist.parentNode !== commentTop.parentNode) {
+      commentTop.parentNode.insertBefore(playlist, commentTop);
+      // 스타일 변경
+      content.style.width = '100%';
+      playlist.style.width = '100%';
+    }
+  } else {
+    // 960 초과: playlist를 main-container 바로 아래 content 옆에 원래대로 복구
+    if (playlist && mainContainer && content && playlist.parentNode !== mainContainer) {
+      mainContainer.appendChild(playlist);
+      // 스타일 복구
+      content.style.width = '76%';
+      playlist.style.width = '24%';
+    }
+  }
+}
+
+// 이벤트 등록 및 초기 실행
+window.addEventListener('resize', rearrangeLayout);
+rearrangeLayout();
+
