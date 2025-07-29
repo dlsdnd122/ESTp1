@@ -364,9 +364,12 @@ main {
 main a{
   text-decoration: none;
 }
+.main-container {
+  display: flex;
+}
 
 .content {
-  width: 360px;
+  width: 30%;
   margin: 10px;
   font-family: Arial, sans-serif;
   cursor: pointer;
