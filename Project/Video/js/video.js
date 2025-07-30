@@ -74,18 +74,29 @@ document.addEventListener('DOMContentLoaded', function () {
 // ==================================
 const likeBtn = document.getElementById('like');
 const unlikeBtn = document.getElementById('unlike');
+const likeCountSpan = document.getElementById('like-count');
 
 likeBtn.addEventListener('click', () => {
   likeBtn.classList.toggle('active');
+
+  let count = parseInt(likeCountSpan.textContent);
+
   if (likeBtn.classList.contains('active')) {
     unlikeBtn.classList.remove('active');
+    likeCountSpan.textContent = count + 1;
+  } else {
+    likeCountSpan.textContent = count - 1;
   }
+
 });
 
 unlikeBtn.addEventListener('click', () => {
   unlikeBtn.classList.toggle('active');
   if (unlikeBtn.classList.contains('active')) {
+
+    likeCountSpan.textContent = count = 500; // 싫어요 버튼 누르면 눌렀던 좋아요 초기화
     likeBtn.classList.remove('active');
+
   }
 });
 
@@ -120,6 +131,8 @@ dropdownBtn.addEventListener('click', () => {
     dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
 
+
+
 // ==================================
 // 7. 특정 width이하일때 버튼 안보이게하기
 // ==================================
@@ -141,6 +154,8 @@ function toggleButtonsByWindowWidth() {
 toggleButtonsByWindowWidth();
 // 창 크기 변경 시 체크
 window.addEventListener("resize", toggleButtonsByWindowWidth);
+
+
 
 // ==================================
 // 8. playlist 반응형 구현
@@ -175,3 +190,55 @@ function rearrangeLayout() {
 window.addEventListener('resize', rearrangeLayout);
 rearrangeLayout();
 
+
+
+// ==================================
+// 9. 댓글 기능
+// ==================================
+const commentBtn = document.querySelector('.comment-bottom');
+const list = [];
+
+function commentBtnHandler(e) {
+  e.preventDefault();
+  // console.log(e.target);
+  // console.log(e.target[0]);
+  // console.log(e.target[0].value);
+  // console.log(e.target.content.value);
+
+  // 댓글 내용이 없을시 alert 창
+  const input = e.target.content;
+  if (input.value=== "") {
+    alert("내용을 입력하고 버튼을 눌러주세요.");
+    return;
+  }
+
+  const commentText = input.value.trim();
+  list.push(commentText);
+
+  addCommentToDOM(commentText); // 화면에 댓글 추가
+  // 댓글 input 초기화
+  e.target.reset();
+}
+
+function addCommentToDOM(comment) {
+  const commentList = document.getElementById("comment-list");
+
+  const commentDiv = document.createElement("div");
+  commentDiv.className = "comment-bottom";
+
+  //프로필 이미지
+  const img = document.createElement("img");
+  img.src = "../video_img/profile.png";
+  img.alt = "프로필";
+  img.className = "i-video_profile";
+
+  // 댓글 텍스트
+  const textP = document.createElement("p");
+  textP.textContent = comment;
+  textP.className = "comment-display"; //스타일 추가시 사용
+
+  commentDiv.appendChild(img);
+  commentDiv.appendChild(textP);
+  commentList.appendChild(commentDiv);
+}
+commentBtn.addEventListener("submit", commentBtnHandler);
