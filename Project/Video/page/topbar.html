@@ -126,7 +126,7 @@
         <button class="vpc-btn" id="sub2" style="width: 70px; display: none">구독 중</button>
         <div class="vp-right">
           <div class="like-group">
-            <button class="like-btn" id="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;2.5천</button>
+            <button class="like-btn" id="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;<span id="like-count">500</span></button>
             <button class="unlike-btn" id="unlike"><i class="fa-regular fa-thumbs-down"></i></button>
           </div>
           <button class="vpc-btn"><i class="fa-solid fa-share"></i> 공유</button>
@@ -183,7 +183,7 @@
       <div id="mobile-target"></div>
 <!--      댓글-->
       <div class="comment-top">
-        <h5 style="margin-bottom: 0; font-weight: bold">댓글 0개</h5>
+        <h5 style="margin-bottom: 0; font-weight: bold">댓글</h5>
         <div>
           <button class="comment-array" id="comment-array"><i class="fa-solid fa-align-left"></i>&nbsp;&nbsp;정렬 기준</button>
           <div id="comment-dropbar" class="comment-dropbar">
@@ -192,10 +192,12 @@
           </div>
         </div>
       </div>
-      <div class="comment-bottom">
+      <form class="comment-bottom" id="comment-bottom">
         <img class="i-video_profile" src="../video_img/profile.png" alt="프로필">
-        <input class="comment-text" type="text" placeholder="댓글 추가...">
-      </div>
+        <input class="comment-text" type="text" placeholder="댓글 추가..." name="content">
+        <button class="comment-add" type="submit" value="등록" >+</button>
+      </form>
+      <div id="comment-list"></div>
     </div>
   </main>
 
