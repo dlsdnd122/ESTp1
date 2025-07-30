@@ -242,3 +242,4 @@ function addCommentToDOM(comment) {
   commentList.appendChild(commentDiv);
 }
 commentBtn.addEventListener("submit", commentBtnHandler);
+

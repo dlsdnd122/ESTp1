@@ -22,7 +22,7 @@
     <button class="menu-btn">
       <i class="fas fa-bars"></i>
     </button>
-    <img onclick="location.href='../../../index.html'" src="/youtube_logo.png" alt="YouTube Logo" class="logo-img" id="logo-img">
+    <img onclick="location.href='../../../index.html'" src="../../../youtube_logo.png" alt="YouTube Logo" class="logo-img" id="logo-img">
   </div>
   <!--center-->
   <div class="center">
@@ -77,7 +77,7 @@
   <nav class="sidebar active" id="sidebar">
     <!--사이드바1-->
     <ul>
-      <li><button onclick="location.href='home.html'"><i class="fas fa-home"></i>홈</button></li>
+      <li><button onclick="location.href='../../../index.html'"><i class="fas fa-home"></i>홈</button></li>
       <li><button id="shorts-btn1"><i class="fas fa-bolt"></i> Shorts</button></li>
       <li><button id="subscribe-btn1"><i class="fas fa-folder-open"></i> 구독</button></li>
       <li><button><i class="fas fa-music"></i> Youtube Music</button></li>
@@ -132,10 +132,10 @@
             <button class="unlike-btn" id="unlike"><i class="fa-regular fa-thumbs-down"></i></button>
           </div>
           <button class="vpc-btn"><i class="fa-solid fa-share"></i> 공유</button>
-          <button class="vpc-btn"><i class="fa-solid fa-download"></i> 내려받기</button>
-          <button class="vpc-btn" ><i class="fa-solid fa-heart"></i> Thanks</button>
-          <button class="vpc-btn" ><i class="fa-solid fa-paperclip"></i> 클립</button>
-          <button class="vpc-btn" ><i class="fa-solid fa-floppy-disk"></i> 저장</button>
+          <button class="vpc-btn" id="none-icon1"><i class="fa-solid fa-download"></i> 내려받기</button>
+          <button class="vpc-btn" id="none-icon2"><i class="fa-solid fa-heart"></i> Thanks</button>
+          <button class="vpc-btn" id="none-icon3"><i class="fa-solid fa-paperclip"></i> 클립</button>
+          <button class="vpc-btn" id="none-icon4"><i class="fa-solid fa-floppy-disk"></i> 저장</button>
           <button class="vpc-btn" >···</button>
         </div>
       </div>
@@ -195,7 +195,7 @@
 
   <!--    오른쪽 재생목록 리스트-->
   <main class="playlist">
-    <a href="thumbnail1.html">
+    <a href="video.html?videoid=1" id="pl1">
       <div class="thumb-list">
         <img src="../video_img/1.png" alt="썸네일">
         <div class="thumb-exp">
@@ -205,7 +205,17 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail3.html">
+    <a href="video.html?videoid=2" id="pl2">
+      <div class="thumb-list">
+        <img src="../video_img/2.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">휴가 복귀 3시간 전</p>
+          <p class="li-letter">숏박스</p>
+          <p class="li-letter">조회수 781만회 · 7개월 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="video.html?videoid=3" id="pl3">
       <div class="thumb-list">
         <img src="../video_img/3.png" alt="썸네일">
         <div class="thumb-exp">
@@ -215,7 +225,7 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail4.html">
+    <a href="video.html?videoid=4" id="pl4">
       <div class="thumb-list">
         <img src="../video_img/4.png" alt="썸네일">
         <div class="thumb-exp">
@@ -225,7 +235,7 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail5.html">
+    <a href="video.html?videoid=5" id="pl5">
       <div class="thumb-list">
         <img src="../video_img/5.png" alt="썸네일">
         <div class="thumb-exp">
@@ -235,7 +245,7 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail6.html">
+    <a href="video.html?videoid=6" id="pl6">
       <div class="thumb-list">
         <img src="../video_img/6.png" alt="썸네일">
         <div class="thumb-exp">
@@ -245,7 +255,7 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail7.html">
+    <a href="video.html?videoid=7" id="pl7">
       <div class="thumb-list">
         <img src="../video_img/7.png" alt="썸네일">
         <div class="thumb-exp">
@@ -255,11 +265,11 @@
         </div>
       </div>
     </a>
-    <a href="thumbnail8.html">
+    <a href="video.html?videoid=8" id="pl8">
       <div class="thumb-list">
         <img src="../video_img/8.png" alt="썸네일">
         <div class="thumb-exp">
-          <p style="font-weight: bold; color: white">wati...you like lofi hip-hop?</p>
+          <p style="font-weight: bold; color: white">wait...you like lofi hip-hop?</p>
           <p class="li-letter">the bootleg boy</p>
           <p class="li-letter">조회수 1.3만회 · 13일 전</p>
         </div>

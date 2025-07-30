@@ -155,16 +155,11 @@ function getVideoIdFromURL() {
 }
 
 // ==================================
-// DOM에 데이터 넣기
+// DOM에 데이터 넣기, 재생목록 none 구현
 // ==================================
 window.addEventListener('DOMContentLoaded', () => {
     const videoId = getVideoIdFromURL();
     const data = videoData[videoId];
-
-    if (!data) {
-        console.error("유효하지 않은 videoid입니다.");
-        return;
-    }
 
     document.title = data.title;
     document.getElementById('video-frame').src = data.videoUrl;
@@ -178,4 +173,31 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('desc-producer-img').src = data.producerImg;
     document.getElementById('desc-producer-name').textContent = data.producerName;
     document.getElementById('desc-producer-subs').textContent = data.producerSubs;
+
+    const Play1 = document.getElementById('pl1');
+    const Play2 = document.getElementById('pl2');
+    const Play3 = document.getElementById('pl3');
+    const Play4 = document.getElementById('pl4');
+    const Play5 = document.getElementById('pl5');
+    const Play6 = document.getElementById('pl6');
+    const Play7 = document.getElementById('pl7');
+    const Play8 = document.getElementById('pl8');
+
+    if (videoId === '1') {
+        Play1.style.display = 'none';
+    } if (videoId === '2') {
+        Play2.style.display = 'none';
+    } if (videoId === '3') {
+        Play3.style.display = 'none';
+    } if (videoId === '4') {
+        Play4.style.display = 'none';
+    } if (videoId === '5') {
+        Play5.style.display = 'none';
+    } if (videoId === '6') {
+        Play6.style.display = 'none';
+    } if (videoId === '7') {
+        Play7.style.display = 'none';
+    } if (videoId === '8') {
+        Play8.style.display = 'none';
+    }
 });
