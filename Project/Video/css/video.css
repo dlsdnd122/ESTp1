@@ -477,8 +477,9 @@ iframe {
 .content-exp p {
   margin: 0;
 }
-.content-exp pre {
-  white-space: pre-wrap;    /*줄바꿈 유지*/
+#video-desc {
+  white-space: pre-line;
+  margin-bottom: 10px;
   font-family: inherit;     /*고정폭 말고 일반 폰트로*/
   font-size: 14px;
 }
@@ -560,6 +561,24 @@ iframe {
   border: none;
   border-bottom: 1px solid white;
   width: 100%;
+}
+.comment-add {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.comment-add:hover {
+  background-color: #555555;
+}
+.comment-display {
+  margin-left: 10px;
+  background-color: black;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
 }
 .comment-dropbar {
   display: none;

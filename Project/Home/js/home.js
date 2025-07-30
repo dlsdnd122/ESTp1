@@ -110,3 +110,19 @@ buttons.forEach(button => {
     button.classList.add('active');
   });
 });
+
+
+// ==================================
+// 5. 썸네일 video.html과 연결
+// ==================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.content').forEach(item => {
+    item.addEventListener('click', () => {
+      const id = item.dataset.id;
+      window.location.href = "Project/Video/page/video.html?videoid=" + id;
+
+
+    });
+  });
+});

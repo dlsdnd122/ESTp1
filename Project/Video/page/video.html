@@ -2,12 +2,276 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/video.css">
   <!--  유튜브 아이콘-->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'><path d='M27.4433 3.12038C27.129 1.89551 26.1331 0.90449 24.902 0.590184C22.716 0 14 0 14 0C14 0 5.284 0 3.09801 0.590184C1.86687 0.90449 0.871033 1.89551 0.556684 3.12038C0 5.3402 0 10 0 10C0 10 0 14.6598 0.556684 16.8796C0.871033 18.1045 1.86687 19.0955 3.09801 19.4098C5.284 20 14 20 14 20C14 20 22.716 20 24.902 19.4098C26.1331 19.0955 27.129 18.1045 27.4433 16.8796C28 14.6598 28 10 28 10C28 10 28 5.3402 27.4433 3.12038Z' fill='%23FF0000'/><path d='M11.1999 14.2857L18.3999 10L11.1999 5.71429V14.2857Z' fill='white'/></svg>">
+  <!--  Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--  Material Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<!--  고정 상단바 불러오기-->
-  <div>비디오 html 입니다.</div>
+
+<!-- 상단바 -->
+<!--left-->
+<header class="topbar">
+  <div class="left">
+    <button class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <img onclick="location.href='../../../index.html'" src="/youtube_logo.png" alt="YouTube Logo" class="logo-img" id="logo-img">
+  </div>
+  <!--center-->
+  <div class="center">
+    <input class="search-bar" id="search-bar" type="text" placeholder="검색">
+    <button class="search-btn"><i class="fas fa-search"></i></button>
+    <button class="voice-btn" title="음성으로 검색">
+      <i class="fas fa-microphone"></i>
+    </button>
+  </div>
+  <!--right-->
+  <div class="right">
+    <button class="make-btn">+&nbsp;&nbsp;만들기</button>
+    <button class="bell-btn" title="알림">
+      <i class="far fa-bell"></i>
+    </button>
+
+    <div class="profile-wrapper">
+      <img src="../video_img/profile.png" alt="Profile" class="profileimg" id="profile-img">
+      <!--    프로필 드롭다운 메뉴-->
+      <div class="dropdown" id="dropdownMenu">
+        <ul>
+          <li style="display: flex"><img src="../video_img/profile.png" alt="Profile" class="dropdownProfile"><p style="margin-top: 25px; margin-left: 10px">정인웅</p></li>
+          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+          <li><a href="#"><i class="fab fa-google"></i>Google 계정</a></li>
+          <li><a href="#"><i class="fas fa-user-circle"></i>계정 전환</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt"></i>로그아웃</a></li>
+          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+          <li><a href="#"><i class="fas fa-video"></i>YouTube 스튜디오</a></li>
+          <li><a href="#"><i class="fas fa-gem"></i>내 Premium 혜택</a></li>
+          <li><a href="#"><i class="fas fa-shopping-bag"></i>구매 항목 및 맴버십</a></li>
+          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+          <li><a href="#"><i class="fas fa-database"></i>Youtube의 내 데이터</a></li>
+          <li><a href="#"><i class="fas fa-palette"></i>디자인: 기기 테마</a></li>
+          <li><a href="#"><i class="fas fa-language"></i>언어: 한국어</a></li>
+          <li><a href="#"><i class="fas fa-eye-slash"></i>제한 모드: 사용 안함</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i>위치: 한국</a></li>
+          <li><a href="#"><i class="fas fa-keyboard"></i>단축키</a></li>
+          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+          <li><a href="#"><i class="fas fa-cog"></i>설정</a></li>
+          <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+          <li><a href="#"><i class="fas fa-question-circle"></i>고객센터</a></li>
+          <li><a href="#"><i class="fas fa-comment-dots"></i>의견 보내기</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!--사이드바v1-->
+<div class="overlay" id="overlay">
+  <nav class="sidebar active" id="sidebar">
+    <!--사이드바1-->
+    <ul>
+      <li><button onclick="location.href='home.html'"><i class="fas fa-home"></i>홈</button></li>
+      <li><button id="shorts-btn1"><i class="fas fa-bolt"></i> Shorts</button></li>
+      <li><button id="subscribe-btn1"><i class="fas fa-folder-open"></i> 구독</button></li>
+      <li><button><i class="fas fa-music"></i> Youtube Music</button></li>
+    </ul>
+    <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+    <!--사이드바2-->
+    <ul>
+      <li><button > 내 페이지&nbsp;&nbsp;&nbsp;&nbsp;></button></li>
+      <li><button ><i class="fas fa-clock"></i> 시청기록</button></li>
+      <li><button ><i class="fas fa-list"></i>재생목록</button></li>
+      <li><button ><i class="fas fa-video"></i> 내 동영상</button></li>
+      <li><button ><i class="fas fa-film"></i> 내 영화</button></li>
+      <li><button ><i class="fas fa-clock"></i> 나중에 볼 동영상</button></li>
+      <li><button ><i class="fas fa-thumbs-up"></i> 좋아요 표시한 동영상</button></li>
+      <li><button ><i class="fas fa-download"></i> 오프라인 저장 동영상</button></li>
+    </ul>
+    <hr style="border: 0; border-top: 1px solid #888; margin: 16px 0;" />
+    <!--사이드바3-->
+    <ul>
+      <li style="margin-bottom: 5px">&nbsp;&nbsp;구독</li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 1<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 2<!--<img class="stream" src="/stream.png">--></button></li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 3<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 4<!--<img class="stream" src="/stream.png">--></button></li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 5<img class="stream" src="/stream.png"></button></li>
+      <li><button><img src="../video_img/5-c.jpg" alt=""> 6<!--<img class="stream" src="/stream.png">--></button></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="main-container">
+  <main class="content">
+    <!--  영상content-->
+    <div class="i-video" id="i-video">
+      <div>
+        <iframe id="video-frame" width="100%" height="670" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <h5 id="video-title" style="margin-top: 10px; font-weight: bold"></h5>
+      <!--    유튜버 이름, 좋아요 등 버튼들-->
+      <div class="v-producer_content">
+        <img id="producer-img" class="i-video_profile" alt="프로필">
+        <div class="vp-left" style="display: block">
+          <p id="producer-name" class="bi-letter"></p>
+          <p id="producer-subs" class="li-letter"></p>
+        </div>
+        <button class="vpc-btn" style="width: 55px">가입</button>
+        <button class="vpc-btn" id="sub1" style="width: 55px">구독</button>
+        <button class="vpc-btn" id="sub2" style="width: 70px; display: none">구독 중</button>
+        <div class="vp-right">
+          <div class="like-group">
+            <button class="like-btn" id="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;<span id="like-count">500</span></button>
+            <button class="unlike-btn" id="unlike"><i class="fa-regular fa-thumbs-down"></i></button>
+          </div>
+          <button class="vpc-btn"><i class="fa-solid fa-share"></i> 공유</button>
+          <button class="vpc-btn"><i class="fa-solid fa-download"></i> 내려받기</button>
+          <button class="vpc-btn" ><i class="fa-solid fa-heart"></i> Thanks</button>
+          <button class="vpc-btn" ><i class="fa-solid fa-paperclip"></i> 클립</button>
+          <button class="vpc-btn" ><i class="fa-solid fa-floppy-disk"></i> 저장</button>
+          <button class="vpc-btn" >···</button>
+        </div>
+      </div>
+      <!--    영상 설명-->
+      <div class="content-exp">
+        <p id="video-stats" style="font-weight: bold"></p>
+        <div class="collapsed" id="full-desc">
+        <pre id="video-desc">
+
+      </pre>
+          <h5>스크립트</h5>
+          <p class="li-letter">스크립트를 보면서 시청하세요.</p>
+          <button class="script-btn">스크립트 표시</button>
+          <div style="display: flex; margin-top: 30px">
+            <img id="desc-producer-img" class="i-video_profile" alt="프로필">
+            <div style="margin-left: 10px">
+              <p id="desc-producer-name" class="bi-letter"></p>
+              <p id="desc-producer-subs" class="li-letter"></p>
+            </div>
+          </div>
+          <div class="str-pr">
+            <button class="str-btn"><i class="fas fa-play"></i>&nbsp;&nbsp;&nbsp;동영상</button>
+            <button class="str-btn"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;&nbsp;정보</button>
+            <button class="str-btn">
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style="width: 16px; height: 16px; vertical-align: middle;">
+              &nbsp;&nbsp;&nbsp;페이스북</button>
+            <button class="str-btn">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 16px; height: 16px; vertical-align: middle;">
+              &nbsp;&nbsp;&nbsp;인스타그램</button>
+          </div>
+        </div>
+        <div class="briefly">
+          <a href="#" id="toggle-btn">더보기</a>
+        </div>
+      </div>
+
+      <div id="mobile-target"></div>
+      <!--      댓글-->
+      <div class="comment-top">
+        <h5 style="margin-bottom: 0; font-weight: bold">댓글</h5>
+        <div>
+          <button class="comment-array" id="comment-array"><i class="fa-solid fa-align-left"></i>&nbsp;&nbsp;정렬 기준</button>
+          <div id="comment-dropbar" class="comment-dropbar">
+            <button class="com-dropdown">인기 댓글순</button>
+            <button class="com-dropdown">최신순</button>
+          </div>
+        </div>
+      </div>
+      <form class="comment-bottom" id="comment-bottom">
+        <img class="i-video_profile" src="../video_img/profile.png" alt="프로필">
+        <input class="comment-text" type="text" placeholder="댓글 추가..." name="content">
+        <button class="comment-add" type="submit" value="등록" >+</button>
+      </form>
+      <div id="comment-list"></div>
+    </div>
+  </main>
+
+  <!--    오른쪽 재생목록 리스트-->
+  <main class="playlist">
+    <a href="thumbnail1.html">
+      <div class="thumb-list">
+        <img src="../video_img/1.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">배말랭 옥천 집에 흑염소 풀기ㅋㅋㅋ</p>
+          <p class="li-letter">핫소스</p>
+          <p class="li-letter">조회수 63만회 · 2주 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail3.html">
+      <div class="thumb-list">
+        <img src="../video_img/3.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">(실제 거장이 만든) 예술적인 방탈출 게임</p>
+          <p class="li-letter">우주하마</p>
+          <p class="li-letter">조회수 14만회 · 6일 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail4.html">
+      <div class="thumb-list">
+        <img src="../video_img/4.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">나처럼 생긴 사람이 많은 나라 여행기 [뉴욕1]</p>
+          <p class="li-letter">레오티비 LEOTV</p>
+          <p class="li-letter">조회수 35만회 · 7일 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail5.html">
+      <div class="thumb-list">
+        <img src="../video_img/5.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">진실을 파헤치겠습니다</p>
+          <p class="li-letter">랄로</p>
+          <p class="li-letter">조회수 103만회 · 10일 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail6.html">
+      <div class="thumb-list">
+        <img src="../video_img/6.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">디저트 1타강사 아조씨의 최애 맛집 (ft.아조씨 시사 교양)</p>
+          <p class="li-letter">추성훈 ChooSungHoon</p>
+          <p class="li-letter">조회수 82만회 · 11일 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail7.html">
+      <div class="thumb-list">
+        <img src="../video_img/7.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">이제 대세는 Claude Code!? 찐 꿀팁 대방출 🔥</p>
+          <p class="li-letter">노마드 코더 Nomad Coders</p>
+          <p class="li-letter">조회수 5만회 · 8일 전</p>
+        </div>
+      </div>
+    </a>
+    <a href="thumbnail8.html">
+      <div class="thumb-list">
+        <img src="../video_img/8.png" alt="썸네일">
+        <div class="thumb-exp">
+          <p style="font-weight: bold; color: white">wati...you like lofi hip-hop?</p>
+          <p class="li-letter">the bootleg boy</p>
+          <p class="li-letter">조회수 1.3만회 · 13일 전</p>
+        </div>
+      </div>
+    </a>
+
+  </main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/video.js"></script>
+<script src="../js/video_2.js"></script>
 </body>
 </html>
