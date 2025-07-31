@@ -257,7 +257,7 @@ Website: http://www.nbthieves.com`
   },
   "13": {
     videoUrl: "https://www.youtube.com/embed/p8aWkWZOlB8?si=7yGpaSgJfTbAlsC8" ,
-    title: "Nothing But Thieves - Itch (II (Visualiser))",
+    title: "Nothing But Thieves - If I Get High (II (Visualiser))",
     producerImg: "../video_img/sub-not.jpg",
     producerName: "Nothing But Thieves",
     producerSubs: "구독자 66.1만명",
@@ -268,7 +268,7 @@ Website: http://www.nbthieves.com`
 http://vevo.ly/dNvJo8`
   },
   "14": {
-    videoUrl: "https://www.youtube.com/embed/0Zji9QkT8O0?si=SAXb-IY8GX7JI3iA\"" ,
+    videoUrl: "https://www.youtube.com/embed/0Zji9QkT8O0?si=SAXb-IY8GX7JI3iA" ,
     title: "넬(NELL) 'Glow in the dark' Official MV",
     producerImg: "../video_img/sub-nell.jpg",
     producerName: "OFFICIAL_NELL",
