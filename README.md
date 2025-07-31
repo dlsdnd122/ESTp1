@@ -298,3 +298,45 @@
 - 전체적인 코드 리펙토링하면서 빠져있는 부분있나 확인
 - 코드 정리
 - 도전과제 확인해보고 해볼만한거 찾기
+
+<br>
+<br>
+<br>
+
+---
+
+## 📅 7/31 (목) - 개발 현황
+
+### 📸 개발 화면
+<img width="1608" height="861" alt="스크린샷 2025-07-31 오후 5 01 17" src="https://github.com/user-attachments/assets/f08ef88f-1f53-45a7-b7e1-6ab358c22b1d" />
+<img width="1599" height="872" alt="스크린샷 2025-07-31 오후 5 01 50" src="https://github.com/user-attachments/assets/2d341ea0-579b-432a-937f-f5b5d054d5ad" />
+<img width="1599" height="871" alt="스크린샷 2025-07-31 오후 5 01 42" src="https://github.com/user-attachments/assets/ac5a69d7-9896-4120-8670-99b05b1058fd" />
+
+
+
+### ✅ 진행된 작업 목록
+- [x] index.html 디자인 오류 수정
+- [x] 사이드바v1 버튼 추가
+- [x] video.html 경로, css 수정
+- [x] 구독 페이지 구현
+
+---
+
+## ❗ 어려웠던 점 및 느낀 점
+
+- 기존에 있던 subscribe.html 파일을 이용할려고 하였는데 loadPage 함수에서 subscribe.js파일을 못 읽는 것을 확인
+- 그래서 subscribe.html을 삭제하고 기존의 index.html 파일에 추가해서 display none을 활용해볼까 했는데 시간이 너무 많이 걸릴꺼같아서 포기
+- gpt와 구글링을 활용하여 알아보니 subscribe.html의 main을 index.html로 동적으로 받아오는 과정에서 js파일 안의 함수는 자동으로 실행되지 않는 문제인걸 확인
+- 그래서 subscribe.js에 있던 함수를 home.js에서 subscribe.html을 받아오는 함수에 호출을 함으로써 해결
+- 썸네일 영상 클릭시 video.html로 넘어가면서 영상을 자동으로 재생되게 할려고 해봄
+- 크롬, 사파리는 정책상 음소거를 해야 자동재생이 가능하게 만들어서 포기
+
+
+---
+
+## 🎯 다음 목표
+
+- 전체적인 코드 리펙토링하면서 빠져있는 부분있나 확인
+- 코드 정리
+- 썸네일 미리보기 영상 두기(시간이 될지 모르겠지만 일단 어떻게 할지 구상중)
+- 깃허브 리드미 작성 
