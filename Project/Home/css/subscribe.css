@@ -17,29 +17,27 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 8px 10px;
+  height: 50px;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.left-menu span {
+.left-menu p {
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   margin-left: 12px;
 }
 
-.right-menu span {
-  cursor: pointer;
-}
-
 .rm-btn {
-  color: blue;
+  color: dodgerblue;
   background-color: black;
-  font-size: 13px;
+  font-size: 15px;
   border: none;
-  border-radius: 50%;
+  border-radius: 20px;
   height:36px;
-  width: 36px;
+  width: 50px;
+  text-align: center;
 }
 .rm-btn:hover {
   background-color: #152b44;
@@ -55,9 +53,46 @@
   height:36px;
   width: 36px;
 }
-.list-btn:hover {
-  background-color: #222;
+
+.subpage-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
 }
+.subpage-left {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* 이미지와 텍스트 사이 간격 */
+}
+
+.subpage-left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* 원형으로 만들고 싶다면 */
+  object-fit: cover;
+}
+.subpage-ep p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #777777;
+}
+.subpage-right button {
+  background-color: #333333;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+.subpage-right button:hover {
+  background-color: #555555;
+}
+
 
 
 /*.content {*/

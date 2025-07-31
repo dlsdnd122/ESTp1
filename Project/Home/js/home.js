@@ -126,3 +126,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// // ==================================
+// // 6. 구독 페이지 관리버튼 로직
+// // ==================================
+//
+//   const manageBtn = document.getElementById('manage-btn');
+//   const maintop1 = document.getElementById('maintop1');
+//   const maintop2 = document.getElementById('maintop2');
+//   const subcontent = document.getElementById('subcontent');
+//   const subcontent2 = document.getElementById('subcontent2');
+//
+//   let manageMode = false;
+//
+//   manageBtn.addEventListener('click', () => {
+//   manageMode = !manageMode;
+//
+//   if (manageMode) {
+//   // 관리 모드 ON
+//   maintop1.style.display = 'none';
+//   subcontent.style.display = 'none';
+//
+//   maintop2.style.display = 'block';
+//   subcontent2.style.display = 'block';
+// } else {
+//   // 일반 모드 ON
+//   maintop1.style.display = 'block';
+//   subcontent.style.display = 'block';
+//
+//   maintop2.style.display = 'none';
+//   subcontent2.style.display = 'none';
+// }
+// });
+
