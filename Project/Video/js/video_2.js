@@ -144,6 +144,165 @@ lost love
 with you
 between the bar`
     },
+  "9": {
+    videoUrl: "https://www.youtube.com/embed/CB44b45kMhA?si=XOwi0zbPGIcQXhvw" ,
+    title: "넬(NELL) 'Moon Shower' Digital Art Film",
+    producerImg: "../video_img/sub-nell.jpg",
+    producerName: "OFFICIAL_NELL",
+    producerSubs: "구독자 9.74만명",
+    viewsAndData: "조회수 100,884회  2024. 7. 22.",
+    description:
+      `넬(NELL) 'Moon Shower' Digital  Art Film
+
+
+
+
+
+
+
+▶NELL Official
+http://www.spacebohemian.com/
+  Instargram / spacebohemians
+  X / spacebohemian
+http://www.nell-store.com
+
+CREDIT
+Video Production: AMBERIN @amberin_world
+Producer: Jinhee Bae @amber_jinn
+Project Manager: Vincent Kim
+Creative Director: AITA @xxaitaxx
+
+
+#넬 #NELL #MoonShower #DigitalArtfilm`
+  },
+  "10": {
+    videoUrl: "https://www.youtube.com/embed/L6tHMDaGgho?si=gpHBrJ_oOcdPYP8Y" ,
+    title: "Bring Me The Horizon - LosT (Lyric Video)",
+    producerImg: "../video_img/sub-bring.jpg",
+    producerName: "Bring Me The Horizon",
+    producerSubs: "구독자 473만명",
+    viewsAndData: "조회수 5,787,984회  2024. 5. 24.",
+    description:
+      `𝙋𝙊𝙎𝙏 𝙃𝙐𝙈𝘼𝙉: 𝙉𝙚𝙓 𝙂𝙀𝙣: https://bmth.co/nexgenAY
+𝙋𝙊𝙎𝙏 𝙃𝙐𝙈𝘼𝙉: 𝙉𝙚𝙓 𝙂𝙀𝙣 vinyl pre-order: https://bmth.co/NeXGen-CDsVinyls
+Tickets for our 2024 tour dates: http://bmthofficial.com/live/
+
+Bring Me The Horizon – LosT (Lyric Video)
+
+Follow bring me the horizon:
+instagram: https://bmth.co/socialsAY/instagram
+twitter: https://bmth.co/socialsAY/twitter
+facebook: https://bmth.co/socialsAY/facebook
+youtube: https://bmth.co/socialsAY/youtube
+tiktok: https://bmth.co/socialsAY/tiktok
+
+newsletter: http://bmthorizon.co/newsletter
+merch store:http://bmthorizon.co/horizonsupply
+
+Credits:
+
+Video by Nicholas Delap
+
+#BMTH #BringMeTheHorizon #NeXGEn`
+  },
+  "11": {
+    videoUrl: "https://www.youtube.com/embed/YyacCX-CFUM?si=mLVIx-ZybIGZrygQ" ,
+    title: "Bring Me The Horizon - Kool-Aid (Lyric Video)",
+    producerImg: "../video_img/sub-bring.jpg",
+    producerName: "Bring Me The Horizon",
+    producerSubs: "구독자 473만명",
+    viewsAndData: "조회수 9,632,489회  2024. 1. 5. ",
+    description:
+      `𝙋𝙊𝙎𝙏 𝙃𝙐𝙈𝘼𝙉: 𝙉e𝙓 𝙂𝙀n: https://bmth.co/nexgenAY
+Tickets for our 2024 tour dates: http://bmthofficial.com/live/
+
+Bring Me The Horizon – Kool-Aid (Lyric Video)
+
+Listen to ‘Kool-Aid’ here: https://bmth.co/Kool-AidAY
+
+Follow bring me the horizon:
+instagram: https://bmth.co/socialsAY/instagram
+twitter: https://bmth.co/socialsAY/twitter
+facebook: https://bmth.co/socialsAY/facebook
+youtube: https://bmth.co/socialsAY/youtube
+tiktok: https://bmth.co/socialsAY/tiktok
+
+newsletter: http://bmthorizon.co/newsletter
+merch store:http://bmthorizon.co/horizonsupply
+
+video by CiRCUS HEaD
+
+#BMTH #BringMeTheHorizon #KoolAid`
+  },
+  "12": {
+    videoUrl: "https://www.youtube.com/embed/vM8aBTApYyU?si=tcI4QcIp5aUTdDMp" ,
+    title: "Nothing But Thieves - Itch (II (Visualiser))",
+    producerImg: "../video_img/sub-not.jpg",
+    producerName: "Nothing But Thieves",
+    producerSubs: "구독자 66.1만명",
+    viewsAndData: "조회수 75,069회  2022. 6. 25.",
+    description:
+      `Itch from the Urchin EP: https://nbthiev.es/urchinep
+
+
+
+Click here to subscribe :: http://smarturl.it/NBT_YT?IQid=yt
+
+Follow NBT on Socials:
+Facebook: http://nbthiev.es/FB
+Twitter: http://nbthiev.es/TW
+Instagram: http://nbthiev.es/IG
+Spotify: http://nbthiev.es/SP
+Website: http://www.nbthieves.com`
+  },
+  "13": {
+    videoUrl: "https://www.youtube.com/embed/p8aWkWZOlB8?si=7yGpaSgJfTbAlsC8" ,
+    title: "Nothing But Thieves - Itch (II (Visualiser))",
+    producerImg: "../video_img/sub-not.jpg",
+    producerName: "Nothing But Thieves",
+    producerSubs: "구독자 66.1만명",
+    viewsAndData: "조회수 75,444회  2022. 6. 24.",
+    description:
+      `Music video by Nothing But Thieves performing If I Get High (II (Visualiser)). (C) 2022 Sony Music Entertainment UK Limited
+
+http://vevo.ly/dNvJo8`
+  },
+  "14": {
+    videoUrl: "https://www.youtube.com/embed/0Zji9QkT8O0?si=SAXb-IY8GX7JI3iA\"" ,
+    title: "넬(NELL) 'Glow in the dark' Official MV",
+    producerImg: "../video_img/sub-nell.jpg",
+    producerName: "OFFICIAL_NELL",
+    producerSubs: "구독자 9.74만명",
+    viewsAndData: "조회수 79,541회  2021. 7. 5.",
+    description:
+      `넬(NELL) 'Glow in the dark' Official MV
+
+
+
+「Glow in the dark」는 밴드 넬이 X2: 이클립스의 개성넘치는 세계관을 음악적으로 재해석한 곡입니다.
+최고의 아티스트와 최고의 제작진이 만난 멋진 M/V를 즐겨주세요.
+
+강렬한 사운드와 역동적인 밴드의 연주, 그리고 고음으로 치닫는 클라이맥스까지.
+X2: 이클립스만의 독특한 감성을 밴드 넬과 함께 만나보세요.
+
+
+
+
+
+
+▶︎NELL Official
+http://www.spacebohemian.com/
+  / spacebohemians
+  / spacebohemian
+http://www.nell-store.com
+
+
+
+
+
+
+#NELL #Glow_in_the_dark #MV`
+  },
 }
 
 // ==================================
@@ -182,6 +341,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const Play6 = document.getElementById('pl6');
     const Play7 = document.getElementById('pl7');
     const Play8 = document.getElementById('pl8');
+    const Play9 = document.getElementById('pl9');
+    const Play10 = document.getElementById('pl10');
+    const Play11 = document.getElementById('pl11');
+    const Play12 = document.getElementById('pl12');
+    const Play13 = document.getElementById('pl13');
+    const Play14 = document.getElementById('pl14');
 
     if (videoId === '1') {
         Play1.style.display = 'none';
@@ -199,5 +364,18 @@ window.addEventListener('DOMContentLoaded', () => {
         Play7.style.display = 'none';
     } if (videoId === '8') {
         Play8.style.display = 'none';
+    }
+    if (videoId === '9') {
+    Play9.style.display = 'none';
+    } if (videoId === '10') {
+    Play10.style.display = 'none';
+    } if (videoId === '11') {
+    Play11.style.display = 'none';
+    } if (videoId === '12') {
+    Play12.style.display = 'none';
+    } if (videoId === '13') {
+    Play13.style.display = 'none';
+    } if (videoId === '14') {
+    Play14.style.display = 'none';
     }
 });

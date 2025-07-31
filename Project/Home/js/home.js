@@ -80,6 +80,37 @@ document.addEventListener('DOMContentLoaded', function () {
           fetchedMain.style.display = "flex";
           document.body.appendChild(fetchedMain);
           updateSidebarUI(localStorage.getItem('sidebarCollapsed') === 'true');
+
+          if (!document.getElementById(`script-${pageName}`)) {
+            const script = document.createElement("script");
+            script.id = `script-${pageName}`;
+            script.src = `Project/Home/js/subscribe.js`;
+            script.onload = () => {
+              console.log(`${pageName}.js loaded`);
+              if (typeof initSubscribePage === "function") {
+                console.log("함수 발견됨");
+                initSubscribePage();
+              } else {
+                console.warn(" 함수가 없음");
+              }
+            };
+
+            script.onerror = () => console.error(`Failed to load ${pageName}.js`);
+            document.body.appendChild(script);
+          }
+
+          // if (!document.getElementById(`script-${pageName}`)) {
+          //   const script = document.createElement("script");
+          //   script.id = `script-${pageName}`;
+          //   script.src = `Project/Home/js/subscribe.js`;  // 예: subscribe.js
+          //   script.type = "text/javascript";
+          //   script.defer = true;  // DOM 로딩 후 실행
+          //   document.body.appendChild(script);
+          // }
+          // const script = document.createElement("script");
+          // script.src = `Project/Home/js/subscribe.js`;  // 예: pageName이 'subscribe'이면 'subscribe.js'를 불러옴
+          // script.type = "text/javascript";
+          // document.body.appendChild(script);
         }
       });
   }
