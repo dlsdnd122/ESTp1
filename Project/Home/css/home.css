@@ -387,7 +387,7 @@ main a{
   border-radius: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-.content:hover .thumbnail {
+.content:hover .thumbnail .video-meta {
   transform: scale(1.03);
   filter: brightness(0.9);
 }
@@ -395,6 +395,7 @@ main a{
 .video-meta {
   display: flex;
   margin-top: 10px;
+  width: 100%;
 }
 .video-info {
   display: flex;
