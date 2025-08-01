@@ -374,6 +374,8 @@ main a{
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: nowrap; /* 줄바꿈 막기 */
+  min-width: 200px; /* 썸네일 깨지는거 방지 */
 }
 .content:hover {
   transform: scale(1.03);
