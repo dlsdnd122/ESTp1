@@ -1,18 +1,103 @@
 # 🎬 CloneTube - 유튜브 클론코딩
 
-<img src="https://github.com/user-attachments/assets/f303d99d-8ca6-47da-a7bc-72de33cbcc4c" width="600" alt="초기 화면" />
+<img width="869" height="831" alt="스크린샷 2025-07-29 오후 3 13 50" src="https://github.com/user-attachments/assets/1348b411-8902-45fb-a7b1-712f08a19a49" />
+
+
+- 기초 웹 프론트엔드 기술을 기반으로 제작한 유튜브 클론 웹사이트입니다. 
+- 실제 유튜브의 주요 UI 요소와 반응형 레이아웃을 HTML/CSS/JavaScript만으로 구현하였습니다.
 
 ---
 
-## 🧩 문제 상황 및 해결 방법
-> _※ 지속 업데이트 예정_
+## 📅 개발 기간
+- 2025.07.21 ~ 2025.08.06 
 
-- 우선은 일기형식으로 쓰다가, 프로젝트 끝나기 직전에 발표형식으로 바꿀 예정입니다.
+---
+## 👩‍💻 프로젝트 개요
 
-<br>
-<br>
-<br>
+- 목표
+    - 웹 표준을 지키며 HTML/CSS/JS로 UI를 구현
+    - YouTube의 핵심 기능과 UI를 모방하여 구조적 사고력 훈련
+    - 추후 백엔드 연동을 위한 웹 컴포넌트 설계 이해
+    - 모바일 대응 반응형 레이아웃 적용 실습
 
+---
+
+## 🗂️ 프로젝트 구조
+
+```bash
+📁 EST_project-root/
+├── index.html               # 🏠 메인 페이지
+├── subscribe.html           # 📰 구독 페이지
+├── shorts.html              # 🎬 숏츠 페이지
+│
+├── Home/                    # 🧩 홈 관련 리소스
+│   ├── css/
+│   │   ├── home.css         # 홈 스타일
+│   │   ├── subscribe.css    # 구독 스타일
+│   │   └── shorts.css       # 숏츠 스타일
+│   └── js/
+│       └── home.js          # 홈 기능 스크립트
+│
+└── Video/                   # 📺 영상 관련 리소스
+    ├── page/
+    │   └── video.html       # 📺영상 페이지
+    ├── css/
+    │   └── video.css        # 영상 페이지 스타일
+    └── js/
+        ├── video.js         # 영상 페이지 로직
+        └── video_2.js       # 추가 기능 스크립트
+
+```
+---
+
+## 🛠 기술 스택
+
+### 🎨 Frontend  
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
+
+### 🎨 디자인 도구  
+<p>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
+</p>
+
+### 🤝 협업 도구  
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+
+### 💻 개발 환경  
+<p>
+  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Live_Server-FFD700?style=for-the-badge&logo=visualstudiocode&logoColor=black"/>
+</p>
+
+
+---
+
+## 🔍 주요 기능
+
+- 홈 화면: 썸네일, 제목, 채널명, 조회수 표시
+- 영상 상세: videoId 쿼리로 이동, iframe 임베딩
+- 반응형 메뉴:	메뉴 토글 및 아이콘 반응 구현
+
+---
+
+##✅ 실행 방법
+```bash
+# 배포 주소
+https://dlsdnd122.github.io/ESTp1/
+
+# 로컬에 클론
+git clone https://github.com/dlsdnd122/ESTp1.git
+
+# 라이브 서버 실행 (VS Code Live Server 확장 추천)
+open index.html
+```
 ---
 
 ## 📅 7/22 (화) - 개발 현황
