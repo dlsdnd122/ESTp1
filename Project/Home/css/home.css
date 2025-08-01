@@ -374,8 +374,8 @@ main a{
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-wrap: nowrap; /* 줄바꿈 막기 */
   min-width: 200px; /* 썸네일 깨지는거 방지 */
+  position: relative;
 }
 .content:hover {
   transform: scale(1.03);
@@ -383,11 +383,16 @@ main a{
 }
 
 /* 썸네일 카드 */
-.thumbnail {
+.thumbnail,
+.video-iframe {
   width: 100%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+.video-iframe {
+  display: none;
+  aspect-ratio: 16/9;
 }
 .content:hover .thumbnail .video-meta {
   transform: scale(1.03);

@@ -220,6 +220,7 @@ function commentBtnHandler(e) {
   e.target.reset();
 }
 
+// 댓글을 html에 추가
 function addCommentToDOM(comment) {
   const commentList = document.getElementById("comment-list");
 
