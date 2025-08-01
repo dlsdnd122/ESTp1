@@ -84,6 +84,12 @@ c. 설명 영역
     - 모바일 대응 반응형 레이아웃 적용 실습
 
 ---
+## 📌 와이어 프레임
+<img width="1088" height="822" alt="스크린샷 2025-08-01 오후 2 53 00" src="https://github.com/user-attachments/assets/04a59709-3f26-43b0-98b9-374b66d0c318" />
+<a href="https://www.figma.com/design/..." target="_blank" rel="noopener noreferrer">
+ 와이어프레임 바로가기
+</a>
+
 
 ## 🗂️ 프로젝트 구조
 
