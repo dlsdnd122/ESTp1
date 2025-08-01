@@ -376,6 +376,7 @@ main a{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-width: 200px; /* 썸네일 깨지는거 방지 */
   position: relative;
+  border-radius: 15px;
 }
 .content:hover {
   transform: scale(1.03);
