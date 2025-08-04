@@ -15,7 +15,7 @@ function initSubscribePage() {
 }
 
 // ==================================
-// 6. 썸네일 미리보기 img태그 iframe으로 바꾸기
+// 2. 썸네일 미리보기 img태그 iframe으로 바꾸기
 // ==================================
 
 document.querySelectorAll('.content').forEach(content => {

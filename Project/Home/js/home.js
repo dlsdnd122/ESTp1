@@ -98,19 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
             script.onerror = () => console.error(`Failed to load ${pageName}.js`);
             document.body.appendChild(script);
           }
-
-          // if (!document.getElementById(`script-${pageName}`)) {
-          //   const script = document.createElement("script");
-          //   script.id = `script-${pageName}`;
-          //   script.src = `Project/Home/js/subscribe.js`;  // 예: subscribe.js
-          //   script.type = "text/javascript";
-          //   script.defer = true;  // DOM 로딩 후 실행
-          //   document.body.appendChild(script);
-          // }
-          // const script = document.createElement("script");
-          // script.src = `Project/Home/js/subscribe.js`;  // 예: pageName이 'subscribe'이면 'subscribe.js'를 불러옴
-          // script.type = "text/javascript";
-          // document.body.appendChild(script);
         }
       });
   }
@@ -158,38 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-// // ==================================
-// // 6. 구독 페이지 관리버튼 로직
-// // ==================================
-//
-//   const manageBtn = document.getElementById('manage-btn');
-//   const maintop1 = document.getElementById('maintop1');
-//   const maintop2 = document.getElementById('maintop2');
-//   const subcontent = document.getElementById('subcontent');
-//   const subcontent2 = document.getElementById('subcontent2');
-//
-//   let manageMode = false;
-//
-//   manageBtn.addEventListener('click', () => {
-//   manageMode = !manageMode;
-//
-//   if (manageMode) {
-//   // 관리 모드 ON
-//   maintop1.style.display = 'none';
-//   subcontent.style.display = 'none';
-//
-//   maintop2.style.display = 'block';
-//   subcontent2.style.display = 'block';
-// } else {
-//   // 일반 모드 ON
-//   maintop1.style.display = 'block';
-//   subcontent.style.display = 'block';
-//
-//   maintop2.style.display = 'none';
-//   subcontent2.style.display = 'none';
-// }
-// });
 
 // ==================================
 // 6. 썸네일 미리보기 img태그 iframe으로 바꾸기
