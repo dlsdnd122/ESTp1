@@ -580,3 +580,40 @@ open index.html
 - ppt 발표 대본 제작
 - 시연영상 제작
 - 코드 정리 및 리뷰
+
+<br>
+<br>
+<br>
+
+---
+
+## 📅 8/1 (금) - 개발 현황
+
+### 📸 개발 화면
+<img width="1312" height="856" alt="스크린샷 2025-08-04 오후 4 27 21" src="https://github.com/user-attachments/assets/d55726fc-4cf5-448c-aece-a035c9cc6a02" />
+<img width="1312" height="868" alt="스크린샷 2025-08-04 오후 4 27 43" src="https://github.com/user-attachments/assets/799f4fd9-30c2-430e-ac8a-8154f75df822" />
+<img width="1280" height="256" alt="스크린샷 2025-08-04 오후 4 27 56" src="https://github.com/user-attachments/assets/92b63334-e681-4235-80fa-3ee40a3e0ef8" />
+
+
+
+
+
+### ✅ 진행된 작업 목록
+- [x] 발표 ppt 제작
+- [x] 시연 영상 제작 후 유튜브 업로드 https://youtu.be/h_m3Svu9lbs
+- [x] 발표 대본 준비
+- [x] 구독 버튼, 댓글 스타일 수정
+
+---
+
+## ❗ 어려웠던 점 및 느낀 점
+
+- 발표 준비를 하였기에 크게 어려운 점은 없었다.
+
+---
+
+## 🎯 다음 목표
+
+- 코드 정리 및 리뷰
+- 발표 준비
+- 리드미 최종 마무리 (코드 삽입)
