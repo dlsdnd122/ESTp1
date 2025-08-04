@@ -109,7 +109,7 @@ const btn2 = document.getElementById('sub2');
 
 btn1.addEventListener('click', () => {
   btn1.style.display = 'none';
-  btn2.style.display = 'inline-block'; // 또는 'block' 도 가능
+  btn2.style.display = 'inline-block';
   alert('구독 하였습니다.')
 });
 
@@ -150,9 +150,9 @@ function toggleButtonsByWindowWidth() {
     }
   }
 }
-// 처음 로딩 시 체크
+// 처음 로딩 시
 toggleButtonsByWindowWidth();
-// 창 크기 변경 시 체크
+// 창 크기 변경 시
 window.addEventListener("resize", toggleButtonsByWindowWidth);
 
 
@@ -233,14 +233,53 @@ function addCommentToDOM(comment) {
   img.alt = "프로필";
   img.className = "i-video_profile";
 
+  // 이름 + 댓글 텍스트 묶는 div
+  const textWrapper = document.createElement("div");
+  textWrapper.className = "comment-text-wrapper";
+
+  // 사용자 이름
+  const nameP = document.createElement("p");
+  nameP.className = "comment-name";
+  nameP.textContent = "@dlsdnd122";
+
   // 댓글 텍스트
   const textP = document.createElement("p");
   textP.textContent = comment;
-  textP.className = "comment-display"; //스타일 추가시 사용
+  textP.className = "comment-display";
+  textP.style.margin = "0";
+  textP.style.padding = "0";
+
+  // 좋아요 + 싫어요 묶는 div
+  const commentlikeBtn = document.createElement("div");
+  commentlikeBtn.className = "comment-like-btn";
+
+
+
+  // 댓글 좋아요 싫어요
+  const commentLike = document.createElement("button");
+  const likeIcon = document.createElement("i");
+  likeIcon.className = "fa-regular fa-thumbs-up";
+  commentLike.appendChild(likeIcon);
+
+  const commentUnlike = document.createElement("button");
+  const unlikeIcon = document.createElement("i");
+  unlikeIcon.className = "fa-regular fa-thumbs-down";
+  commentUnlike.appendChild(unlikeIcon);
+
+
+  // 좋아요 싫어요 묶기
+  commentlikeBtn.appendChild(commentLike);
+  commentlikeBtn.appendChild(commentUnlike);
+
+  // 이름과 댓글, 좋아요 싫어요 묶기
+  textWrapper.appendChild(nameP);
+  textWrapper.appendChild(textP);
+  textWrapper.appendChild(commentlikeBtn);
 
   commentDiv.appendChild(img);
-  commentDiv.appendChild(textP);
+  commentDiv.appendChild(textWrapper);
   commentList.appendChild(commentDiv);
+
 }
 commentBtn.addEventListener("submit", commentBtnHandler);
 
