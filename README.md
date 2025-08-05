@@ -206,6 +206,9 @@ git clone https://github.com/dlsdnd122/ESTp1.git
 
 # 라이브 서버 실행 (VS Code Live Server 확장 추천)
 open index.html
+
+# 시연 영상
+https://youtu.be/h_m3Svu9lbs
 ```
 ---
 
