@@ -196,7 +196,7 @@ c. 설명 영역
 
 ---
 
-##✅ 실행 방법
+## ✅ 실행 방법
 ```bash
 # 배포 주소
 https://dlsdnd122.github.io/ESTp1/
@@ -207,6 +207,16 @@ git clone https://github.com/dlsdnd122/ESTp1.git
 # 라이브 서버 실행 (VS Code Live Server 확장 추천)
 open index.html
 ```
+---
+
+## ✏️ 발표 자료
+<img width="1429" height="809" alt="스크린샷 2025-08-05 오후 3 07 02" src="https://github.com/user-attachments/assets/0b710448-b22e-4c7c-b93b-9232350042d5" />
+<a href = "https://www.canva.com/design/DAGvEDlJn5A/Qw3qFgMNyfQpZljlC5dl7w/view?utm_content=DAGvEDlJn5A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h662dcca12e"> 발표 PPT </a>
+
+---
+## ✏️ 게획 일정표
+<img width="1282" height="626" alt="스크린샷 2025-08-05 오후 3 08 03" src="https://github.com/user-attachments/assets/36bf06df-6f6c-4106-9506-fa5996eed186" />
+
 ---
 
 ## 📅 7/22 (화) - 개발 현황
