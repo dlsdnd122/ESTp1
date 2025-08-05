@@ -189,6 +189,7 @@ function rearrangeLayout() {
   } else {
     // 960 초과: playlist를 main-container 바로 아래 content 옆에 원래대로 복구
     if (playlist && mainContainer && content && playlist.parentNode !== mainContainer) {
+      // 재생목록 다시 오른쪽에 추가
       mainContainer.appendChild(playlist);
       // 영상 가로 76%
       content.style.width = '76%';
