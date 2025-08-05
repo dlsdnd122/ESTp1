@@ -26,15 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
   menuBtn.addEventListener('click', () => {
     const isShown = sidebar.classList.contains('show');
 
-    if (isShown) {
+    if (isShown) {  // 사이드바가 있을때
       sidebar.classList.remove('show');
       overlay.classList.remove('show');
 
+      // 사이드바 닫히는 애니메이션이 끝난 뒤에 완전히 숨김
       // transition 끝나면 display: none 적용
       setTimeout(() => {
         sidebar.style.display = 'none';
       }, 300);
-    } else {
+    } else {  // 사이드바가 없을때
       sidebar.style.display = 'block'; // 먼저 보여주고
       // 한 프레임 뒤에 class 추가
       requestAnimationFrame(() => {
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-
+  // 뒤에 배경 클릭 시
   overlay.addEventListener('click', () => {
     sidebar.classList.remove('show');
     overlay.classList.remove('show');
@@ -58,14 +59,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // 3. 더보기/간략히 로직
 // ==================================
 
-  const toggleBtn = document.getElementById("toggle-btn");
-  const fullDesc = document.getElementById("full-desc");
+  const toggleBtn = document.getElementById("toggle-btn");  // 더보기/간략히
+  const fullDesc = document.getElementById("full-desc");  // 영상설명
 
   toggleBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  // 두 상태를 토글
   fullDesc.classList.toggle("expanded");
   fullDesc.classList.toggle("collapsed");
 
+  // 상태에 따라 버튼 간략히/더보기로 변경
   toggleBtn.textContent = fullDesc.classList.contains("expanded") ? "간략히" : "더보기";
 });
 
@@ -77,6 +80,7 @@ const unlikeBtn = document.getElementById('unlike');
 const likeCountSpan = document.getElementById('like-count');
 
 likeBtn.addEventListener('click', () => {
+  // active : 계속 호버인거처럼 보이게 위한 스타일
   likeBtn.classList.toggle('active');
 
   let count = parseInt(likeCountSpan.textContent);
@@ -94,7 +98,8 @@ unlikeBtn.addEventListener('click', () => {
   unlikeBtn.classList.toggle('active');
   if (unlikeBtn.classList.contains('active')) {
 
-    likeCountSpan.textContent = count = 500; // 싫어요 버튼 누르면 눌렀던 좋아요 초기화
+    count = 500;
+    likeCountSpan.textContent = 500; // 싫어요 버튼 누르면 눌렀던 좋아요 초기화
     likeBtn.classList.remove('active');
 
   }
@@ -128,6 +133,7 @@ const dropdownContent = document.getElementById('comment-dropbar');
 
 dropdownBtn.addEventListener('click', () => {
   dropdownContent.style.display =
+    // block -> none, none -> block
     dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
 
@@ -137,11 +143,14 @@ dropdownBtn.addEventListener('click', () => {
 // 7. 특정 width이하일때 버튼 안보이게하기
 // ==================================
 function toggleButtonsByWindowWidth() {
+  // 현재 width를 windowWidth에 저장
   const windowWidth = window.innerWidth;
 
+  // none-icon1~4
   for (let i = 1; i <= 4; i++) {
     const el = document.getElementById(`none-icon${i}`);
     if (el) {
+      // width = 960 미만일때
       if (windowWidth < 960) {
         el.style.display = "none";
       } else {
@@ -150,9 +159,9 @@ function toggleButtonsByWindowWidth() {
     }
   }
 }
-// 처음 로딩 시
+// 처음 로딩 시 width 확인후 버튼 상태 결정
 toggleButtonsByWindowWidth();
-// 창 크기 변경 시
+// 창 크기 변경 시 버튼 상태 결정
 window.addEventListener("resize", toggleButtonsByWindowWidth);
 
 
@@ -169,18 +178,21 @@ const commentBottom = document.querySelector('.comment-bottom'); // 댓글 입�
 function rearrangeLayout() {
   if (window.innerWidth <= 960) {
     // 960 이하: playlist를 댓글 위로 이동
+    // 초기에는 부모태그가 다르기 때문에 무조건 참이다.  commentTop = main, playlist는 다른 main태그
     if (playlist && commentTop && playlist.parentNode !== commentTop.parentNode) {
       commentTop.parentNode.insertBefore(playlist, commentTop);
-      // 스타일 변경
+      // 영상 가로 100%
       content.style.width = '100%';
+      // 재생목록 가로 100%
       playlist.style.width = '100%';
     }
   } else {
     // 960 초과: playlist를 main-container 바로 아래 content 옆에 원래대로 복구
     if (playlist && mainContainer && content && playlist.parentNode !== mainContainer) {
       mainContainer.appendChild(playlist);
-      // 스타일 복구
+      // 영상 가로 76%
       content.style.width = '76%';
+      // 재생목록 가로 24%
       playlist.style.width = '24%';
     }
   }
@@ -211,7 +223,8 @@ function commentBtnHandler(e) {
     alert("내용을 입력하고 버튼을 눌러주세요.");
     return;
   }
-
+  // trim -> 앞뒤 공백 제거
+  // 변수에 넣고 List배열에 push
   const commentText = input.value.trim();
   list.push(commentText);
 
@@ -253,8 +266,6 @@ function addCommentToDOM(comment) {
   const commentlikeBtn = document.createElement("div");
   commentlikeBtn.className = "comment-like-btn";
 
-
-
   // 댓글 좋아요 싫어요
   const commentLike = document.createElement("button");
   const likeIcon = document.createElement("i");
@@ -265,7 +276,6 @@ function addCommentToDOM(comment) {
   const unlikeIcon = document.createElement("i");
   unlikeIcon.className = "fa-regular fa-thumbs-down";
   commentUnlike.appendChild(unlikeIcon);
-
 
   // 좋아요 싫어요 묶기
   commentlikeBtn.appendChild(commentLike);

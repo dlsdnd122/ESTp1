@@ -55,7 +55,7 @@ const videoData = {
         viewsAndData: "조회수 337,675회 2025. 7. 21.",
         description:
             `인스타그램 leo.ranta
-네이버 카페 https://cafe.naver.com/leotv94</a>`
+네이버 카페 https://cafe.naver.com/leotv94`
     },
 
     "5": {
