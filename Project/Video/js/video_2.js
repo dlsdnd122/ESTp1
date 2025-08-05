@@ -348,35 +348,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const Play13 = document.getElementById('pl13');
     const Play14 = document.getElementById('pl14');
 
-    if (videoId === '1') {
-        Play1.style.display = 'none';
-    } if (videoId === '2') {
-        Play2.style.display = 'none';
-    } if (videoId === '3') {
-        Play3.style.display = 'none';
-    } if (videoId === '4') {
-        Play4.style.display = 'none';
-    } if (videoId === '5') {
-        Play5.style.display = 'none';
-    } if (videoId === '6') {
-        Play6.style.display = 'none';
-    } if (videoId === '7') {
-        Play7.style.display = 'none';
-    } if (videoId === '8') {
-        Play8.style.display = 'none';
+  for (let i = 1; i <= 14; i++) {
+    const playItem = document.getElementById(`pl${i}`);
+    if (videoId === i.toString() && playItem) {
+      playItem.style.display = 'none';
     }
-    if (videoId === '9') {
-    Play9.style.display = 'none';
-    } if (videoId === '10') {
-    Play10.style.display = 'none';
-    } if (videoId === '11') {
-    Play11.style.display = 'none';
-    } if (videoId === '12') {
-    Play12.style.display = 'none';
-    } if (videoId === '13') {
-    Play13.style.display = 'none';
-    } if (videoId === '14') {
-    Play14.style.display = 'none';
-    }
+  }
 });
 
