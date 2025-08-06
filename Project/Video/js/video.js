@@ -178,7 +178,7 @@ const commentBottom = document.querySelector('.comment-bottom'); // 댓글 입�
 function rearrangeLayout() {
   if (window.innerWidth <= 960) {
     // 960 이하: playlist를 댓글 위로 이동
-    // 초기에는 부모태그가 다르기 때문에 무조건 참이다.  commentTop = main, playlist는 다른 main태그
+    // 부모가 다를 경우에 이동.  commentTop = main, playlist는 다른 main태그
     if (playlist && commentTop && playlist.parentNode !== commentTop.parentNode) {
       commentTop.parentNode.insertBefore(playlist, commentTop);
       // 영상 가로 100%
